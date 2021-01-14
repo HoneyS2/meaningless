@@ -2,10 +2,17 @@ package main
 
 import (
     "fmt"
-    "time"
+    //"time"
 )
 
 func main() {
-    fmt.Println("Hello, world!")
-    fmt.Println(time.Now())
+    //fmt.Println("Hello, world!")
+    //fmt.Println(time.Now())
+
+    foo := map[int]string{
+        0: "a",
+        1: "b",
+        2: "c",
+    }
+    fmt.Println(foo)
 }
