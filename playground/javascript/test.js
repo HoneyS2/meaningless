@@ -31,4 +31,9 @@ console.log(1 - "1");
 /*
 funny jokes #3
 */
-console.log(typeof NaN);
+//console.log(typeof NaN);
+
+/*
+funny jokes #4
+*/
+console.log(9999999999999999);
