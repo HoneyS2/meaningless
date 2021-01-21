@@ -36,4 +36,11 @@ funny jokes #3
 /*
 funny jokes #4
 */
-console.log(9999999999999999);
+//console.log(9999999999999999);
+
+
+/*
+funny jokes #5
+*/
+console.log(0.5 + 0.1 == 0.6);
+console.log(0.1 + 0.2 == 0.3);
