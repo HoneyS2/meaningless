@@ -2,10 +2,12 @@ fun main() {
     //println("Hello, world!")
     
     var a: String
-    a = foo("bar")
-    println(a)
+    var b: String
+    a = foo()
+    b = foo("bar2")
+    println(a+" "+b)
 }
 
-fun foo(str: String): String {
+fun foo(str: String = "bar"): String {
     return str
 }
