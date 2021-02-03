@@ -18,3 +18,6 @@ END
 
 read -p "Input text: " foo
 echo $foo
+
+read -s -p "Input password: " bar
+echo $bar
