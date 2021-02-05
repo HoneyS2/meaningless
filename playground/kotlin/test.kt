@@ -1,3 +1,5 @@
+import java.util.Scanner
+
 fun main() {
     //println("Hello, world!")
     
@@ -9,10 +11,17 @@ fun main() {
     println(a+" "+b)
     */
     
+    /*
     var str = """A
                 |B
                 |C""".trimMargin()
     println(str)
+    */
+
+    print("Input text: ")
+    val scan: Scanner = Scanner(System.`in`)
+    var str = scan.next()
+    println("Result: $str")
 }
 
 /*
