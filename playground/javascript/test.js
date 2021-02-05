@@ -42,5 +42,13 @@ funny jokes #4
 /*
 funny jokes #5
 */
+/*
 console.log(0.5 + 0.1 == 0.6);
 console.log(0.1 + 0.2 == 0.3);
+*/
+
+/*
+funny jokes #6
+*/
+console.log(Math.min());
+console.log(Math.max());
