@@ -38,7 +38,6 @@ funny jokes #4
 */
 //console.log(9999999999999999);
 
-
 /*
 funny jokes #5
 */
@@ -50,5 +49,19 @@ console.log(0.1 + 0.2 == 0.3);
 /*
 funny jokes #6
 */
+/*
 console.log(Math.min());
 console.log(Math.max());
+*/
+
+var foo = 1;
+var outer = function () {
+    var inner = function () {
+        console.log(foo);
+        var foo = 2;
+    };
+    inner();
+    console.log(foo);
+};
+outer();
+console.log(foo);
