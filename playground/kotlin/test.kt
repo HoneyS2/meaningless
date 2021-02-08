@@ -20,7 +20,7 @@ fun main() {
 
     print("Input text: ")
     val scan: Scanner = Scanner(System.`in`)
-    var str = scan.next()
+    var str = scan.nextLine()
     println("Result: $str")
 }
 
