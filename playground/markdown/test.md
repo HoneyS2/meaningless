@@ -4,3 +4,5 @@
 | 2 | Bar | 30 |
 | 3 | Foe | 25 |
 | 4 | Baz | 35 |
+
+Apple **Banana** ~~Cat~~
