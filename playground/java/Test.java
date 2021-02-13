@@ -8,7 +8,7 @@ class Test {
         Scanner scan = new Scanner(System.in);
 
         System.out.print("Input text: ");
-        foo = scan.next();
+        foo = scan.nextLine();
         System.out.println("Result: "+foo);
     }
 }
