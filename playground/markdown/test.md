@@ -6,3 +6,7 @@
 | 4 | Baz | 35 |
 
 Apple **Banana** ~~Cat~~
+
+```
+I HATE Valentine's Day
+```
