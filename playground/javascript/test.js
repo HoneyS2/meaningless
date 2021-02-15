@@ -54,6 +54,7 @@ console.log(Math.min());
 console.log(Math.max());
 */
 
+/*
 var foo = 1;
 var outer = function () {
     var inner = function () {
@@ -65,3 +66,7 @@ var outer = function () {
 };
 outer();
 console.log(foo);
+*/
+
+var foo = null;
+console.log(typeof foo);
