@@ -5,7 +5,7 @@
 | 3 | Foe | 25 |
 | 4 | Baz | 35 |
 
-Apple **Banana** ~~Cat~~
+Apple **Banana** ~~Cat~~ `Dog`
 
 ```
 I HATE Valentine's Day
