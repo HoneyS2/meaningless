@@ -70,3 +70,5 @@ console.log(foo);
 
 var foo = null;
 console.log(typeof foo);
+console.log(foo == undefined);
+console.log(foo === undefined);
