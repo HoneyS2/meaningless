@@ -68,7 +68,20 @@ outer();
 console.log(foo);
 */
 
+/*
 var foo = null;
 console.log(typeof foo);
 console.log(foo == undefined);
 console.log(foo === undefined);
+*/
+
+var outer = function () {
+    var a = 1;
+    var inner = function () {
+        return ++a;
+    };
+    return inner;
+};
+var foo = outer();
+console.log(foo());
+console.log(foo());
