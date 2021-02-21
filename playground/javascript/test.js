@@ -75,6 +75,7 @@ console.log(foo == undefined);
 console.log(foo === undefined);
 */
 
+/*
 var outer = function () {
     var a = 1;
     var inner = function () {
@@ -85,3 +86,6 @@ var outer = function () {
 var foo = outer();
 console.log(foo());
 console.log(foo());
+*/
+
+console.dir(Array);
