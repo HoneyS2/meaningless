@@ -88,4 +88,6 @@ console.log(foo());
 console.log(foo());
 */
 
-console.dir(Array);
+//console.dir(Array);
+
+let timerId = setInterval(() => console.log('HA HA!'), 1000);
