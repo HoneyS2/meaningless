@@ -8,5 +8,6 @@
 Apple **Banana** ~~Cat~~ `Dog` *Egg* **_Flower_**
 
 ```
-I HATE Valentine's Day
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 ```
+# Heading level 1
