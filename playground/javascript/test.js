@@ -91,4 +91,4 @@ console.log(foo());
 //console.dir(Array);
 
 let timerId = setInterval(() => console.log('HA HA!'), 1000);
-//clearInterval(timerId);
+setInterval(() => clearInterval(timerId), 5000);
