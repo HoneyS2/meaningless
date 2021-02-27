@@ -14,3 +14,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
 Another Heading level 1
 =====
+
+## Heading level 2
+
+Another Heading level 2
+-----
