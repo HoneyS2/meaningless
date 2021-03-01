@@ -95,5 +95,16 @@ let timerId = setInterval(() => console.log('HA HA!'), 1000);
 setInterval(() => clearInterval(timerId), 5000);
 */
 
+/*
 var foo = [];
 Object.getPrototypeOf(foo);
+*/
+
+function foo (str) {
+    console.log(this.bar+", "+str+"!");
+};
+
+var a = {
+    'bar': "Hello"
+};
+foo.call(a, "world");
