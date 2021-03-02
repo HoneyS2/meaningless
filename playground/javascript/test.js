@@ -100,11 +100,12 @@ var foo = [];
 Object.getPrototypeOf(foo);
 */
 
-function foo (str) {
-    console.log(this.bar+", "+str+"!");
+function foo (str1, str2) {
+    console.log(this.bar+", "+str1+"!");
+    console.log("I'm "+str2+".");
 };
 
 var a = {
     'bar': "Hello"
 };
-foo.call(a, "world");
+foo.call(a, "world", "foe");
