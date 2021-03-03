@@ -108,4 +108,5 @@ function foo (str1, str2) {
 var a = {
     'bar': "Hello"
 };
-foo.call(a, "world", "foe");
+//foo.call(a, "world", "foe");
+foo.apply(a, ["world", "foe"]);
