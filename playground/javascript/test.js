@@ -100,6 +100,7 @@ var foo = [];
 Object.getPrototypeOf(foo);
 */
 
+/*
 function foo (str1, str2) {
     console.log(this.bar+", "+str1+"!");
     console.log("I'm "+str2+".");
@@ -110,3 +111,14 @@ var a = {
 };
 //foo.call(a, "world", "foe");
 foo.apply(a, ["world", "foe"]);
+*/
+
+var func = function (str) {
+    console.log(this, str);
+};
+func('a');
+
+var obj = {
+    method: func
+};
+obj.method('b');
