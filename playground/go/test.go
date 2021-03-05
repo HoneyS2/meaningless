@@ -46,6 +46,14 @@ func main() {
         fmt.Println(v.Abs())
         */
 
+        /*
         foo := make([]string, 10, 15)
         fmt.Println(len(foo), cap(foo))
+        */
+
+        sum := 0
+	for i := 0; i < 10; i++ {
+	        sum += i
+	}
+	fmt.Println(sum)
 }
