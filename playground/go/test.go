@@ -51,6 +51,7 @@ func main() {
         fmt.Println(len(foo), cap(foo))
         */
 
+	/*
         sum := 0
 	for i := 0; i < 10; i++ {
 	        sum += i
@@ -62,4 +63,11 @@ func main() {
 		sum2 += sum2
 	}
 	fmt.Println(sum2)
+	*/
+	
+	var i int
+	var f float64
+	var b bool
+	var s string
+	fmt.Printf("%v %v %v %q\n", i, f, b, s)
 }
