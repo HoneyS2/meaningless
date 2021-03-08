@@ -2,6 +2,7 @@ package main
 
 import (
         "fmt"
+	"runtime"
         //"math"
         //"time"
 )
@@ -65,9 +66,20 @@ func main() {
 	fmt.Println(sum2)
 	*/
 	
+	/*
 	var i int
 	var f float64
 	var b bool
 	var s string
 	fmt.Printf("%v %v %v %q\n", i, f, b, s)
+	*/
+	
+	switch os := runtime.GOOS; os {
+	case "darwin":
+		fmt.Println("OS X.")
+	case "linux":
+		fmt.Println("Linux.")
+	default:
+		fmt.Printf("%s.\n", os)
+	}
 }
