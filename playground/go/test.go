@@ -2,7 +2,7 @@ package main
 
 import (
         "fmt"
-	"runtime"
+	//"runtime"
         //"math"
         //"time"
 )
@@ -73,7 +73,8 @@ func main() {
 	var s string
 	fmt.Printf("%v %v %v %q\n", i, f, b, s)
 	*/
-	
+
+	/*
 	switch os := runtime.GOOS; os {
 	case "darwin":
 		fmt.Println("OS X.")
@@ -82,4 +83,8 @@ func main() {
 	default:
 		fmt.Printf("%s.\n", os)
 	}
+	*/
+	
+	defer fmt.Printf("world!")
+	fmt.Printf("Hello, ")
 }
