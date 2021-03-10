@@ -2,9 +2,9 @@ package main
 
 import (
         "fmt"
+	"time"
 	//"runtime"
         //"math"
-        //"time"
 )
 
 /*
@@ -21,6 +21,13 @@ func (v *Vertex) Scale(f float64) {
         v.Y = v.Y * f
 }
 */
+
+func Foo(s string) {
+	for i := 0; i < 5; i++ {
+		time.Sleep(100 * time.Millisecond)
+		fmt.Println(s)
+	}
+}
 
 func main() {
         //fmt.Println("Hello, world!")
@@ -85,6 +92,11 @@ func main() {
 	}
 	*/
 	
+	/*
 	defer fmt.Printf("world!")
 	fmt.Printf("Hello, ")
+	*/
+	
+	go Foo("aaa")
+	Foo("bbb")
 }
