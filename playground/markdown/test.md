@@ -19,3 +19,7 @@ Another Heading level 1
 
 Another Heading level 2
 -----
+
+- apple
+- banana
+- cat
