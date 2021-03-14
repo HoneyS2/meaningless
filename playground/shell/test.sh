@@ -1,6 +1,8 @@
 #!/bin/bash
 
+: <<END
 echo "Hello, world!"
+END
 
 : <<END
 foo="bar"
@@ -16,8 +18,12 @@ foo=$1
 echo $foo
 END
 
+: <<END
 read -p "Input text: " foo
 echo $foo
 
 read -s -p "Input password: " bar
 echo $bar
+END
+
+awk '{ print $1"-"$2 }' test.txt
