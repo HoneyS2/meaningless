@@ -24,6 +24,10 @@ Another Heading level 2
 - banana
 - cat
 
-* aaa
-  - bbb
-    + ccc
+* apple
+  - banana
+    + cat
+
+1. apple
+2. banana
+3. cat
