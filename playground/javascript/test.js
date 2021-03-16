@@ -113,6 +113,7 @@ var a = {
 foo.apply(a, ["world", "foe"]);
 */
 
+/*
 var func = function (str) {
     console.log(this, str);
 };
@@ -122,3 +123,9 @@ var obj = {
     method: func
 };
 obj.method('b');
+*/
+
+var foo = ['a', 'b', 'c', 'd', 'e'];
+foo.forEach(function(element, index, arr){
+    console.log(index+': '+element);
+});
