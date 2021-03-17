@@ -20,5 +20,8 @@ print_r($bar2);
 # 4. String test
 $str1 = "foo";
 $str2 = "bar";
-$str3 = "$str1, $str2";
+$str3 = "{$str1}, {$str2}!";
+$str4 = $str1.", ".$str2."!";
 print_r($str3);
+print_r(PHP_EOL);
+print_r($str4);
