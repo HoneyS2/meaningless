@@ -22,12 +22,14 @@ func (v *Vertex) Scale(f float64) {
 }
 */
 
+/*
 func Foo(s string) {
 	for i := 0; i < 5; i++ {
 		time.Sleep(100 * time.Millisecond)
 		fmt.Println(s)
 	}
 }
+*/
 
 func main() {
         //fmt.Println("Hello, world!")
@@ -97,6 +99,13 @@ func main() {
 	fmt.Printf("Hello, ")
 	*/
 	
+	/*
 	go Foo("aaa")
 	Foo("bbb")
+	*/
+	
+	now := time.Now()
+	fmt.Println(now.Year())
+	fmt.Println(now.Month())
+	fmt.Println(now.Day())
 }
