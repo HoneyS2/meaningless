@@ -112,4 +112,5 @@ func main() {
 	fmt.Println(now.Hour())
 	fmt.Println(now.Minute())
 	fmt.Println(now.Second())
+	fmt.Println(now.Format(time.RFC3339))
 }
