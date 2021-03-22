@@ -21,7 +21,9 @@ fun main() {
     print("Input text: ")
     val scan: Scanner = Scanner(System.`in`)
     var str = scan.nextLine()
-    println("Result: $str")
+    print("Input integer: ")
+    var num = scan.nextInt()
+    println("Result: $str $num")
 }
 
 /*
