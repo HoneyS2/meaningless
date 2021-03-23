@@ -34,3 +34,5 @@ Another Heading level 2
 1. apple
 2. banana
 3. cat
+
+[Go to GitHub](https://github.com)
