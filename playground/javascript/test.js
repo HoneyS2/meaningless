@@ -127,5 +127,6 @@ obj.method('b');
 
 var foo = ['a', 'b', 'c', 'd', 'e'];
 foo.forEach(function(element, index, arr){
+    console.log(this.bar[index]);
     console.log(index+': '+element);
-});
+}, {bar: [1, 2, 3, 4, 5]});
