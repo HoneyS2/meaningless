@@ -133,7 +133,13 @@ foo.forEach(function(element, index, arr){
 }, {bar: [1, 2, 3, 4, 5]});
 */
 
+/*
 let hello = (str) => {
     return `Hello, ${str}!`
 }
 hello('world')
+*/
+
+let foo = ['a', 'b', 'c'];
+let bar = [1, ...foo, 2];
+console.log(bar);
