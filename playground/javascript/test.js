@@ -140,6 +140,14 @@ let hello = (str) => {
 hello('world')
 */
 
+/*
 let foo = ['a', 'b', 'c'];
 let bar = [1, ...foo, 2];
 console.log(bar);
+*/
+
+let foo = ['a', 'b', 'c'];
+let bar = foo;
+console.log(foo === bar);
+bar[2] = 'd';
+console.log(foo);
