@@ -148,6 +148,9 @@ console.log(bar);
 
 let foo = ['a', 'b', 'c'];
 let bar = foo;
+let foe = [...foo];
 console.log(foo === bar);
+console.log(foo === foe);
 bar[2] = 'd';
 console.log(foo);
+console.log(foe);
