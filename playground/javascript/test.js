@@ -140,12 +140,18 @@ let hello = (str) => {
 hello('world')
 */
 
+let foo = [1, 3, 5, 7, 9]
+let bar = foo.map(x => x + 1)
+console.log(foo)
+console.log(bar)
+
 /*
 let foo = ['a', 'b', 'c'];
 let bar = [1, ...foo, 2];
 console.log(bar);
 */
 
+/*
 let foo = ['a', 'b', 'c'];
 let bar = foo;
 let foe = [...foo];
@@ -154,3 +160,4 @@ console.log(foo === foe);
 bar[2] = 'd';
 console.log(foo);
 console.log(foe);
+*/
