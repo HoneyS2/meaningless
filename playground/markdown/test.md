@@ -5,7 +5,7 @@
 | 3 | Foe | 25 |
 | 4 | Baz | 35 |
 
-Apple **Banana** ~~Cat~~ `Dog` *Egg* **_Flower_**
+Apple **Banana** ~~Cat~~ `Dog` *Egg* **_Flower_** <u>grapes</u>
 
 ```
 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
