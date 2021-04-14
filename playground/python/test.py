@@ -1,5 +1,6 @@
 #import datetime
 #import time
+from math import pow
 
 #print("Hello, world!")
 
@@ -17,6 +18,7 @@ end = time.time()
 print(end - start)
 '''
 
+'''
 a_list = ['a', 'b', 'c', 'd']
 b_tuple = (1,2,3,4)
 c_dictionary = {'a': 'apple', 'b': 'banana', 'c': 3}
@@ -27,3 +29,6 @@ print(b_tuple)
 print(c_dictionary)
 print(d_set)
 print(e_set2)
+'''
+
+print(pow(2, 2))
