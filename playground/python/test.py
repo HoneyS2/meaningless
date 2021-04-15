@@ -1,6 +1,6 @@
 #import datetime
 #import time
-from math import pow
+import math
 
 #print("Hello, world!")
 
@@ -31,4 +31,9 @@ print(d_set)
 print(e_set2)
 '''
 
-print(pow(2, 2))
+print(dir(math))
+print(math.pow(2, 2))
+print(math.fabs(-3))
+print(math.factorial(5))
+print(math.ceil(1.1))
+print(math.floor(1.9))
