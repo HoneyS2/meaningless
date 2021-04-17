@@ -40,5 +40,12 @@ print(math.ceil(1.1))
 print(math.floor(1.9))
 '''
 
+
+# for 1
 for i in range(1, 11):
     print(i)
+
+# for 2
+foo = {1: 'a', 2: 'b', 3: 'c'}
+for key, value in foo.items():
+    print(key, value)
