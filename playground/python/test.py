@@ -49,3 +49,8 @@ for i in range(1, 11):
 foo = {1: 'a', 2: 'b', 3: 'c'}
 for key, value in foo.items():
     print(key, value)
+
+# for 3
+bar = [1, 3, 5, 7, 9]
+for i in bar:
+    print(i+1)
