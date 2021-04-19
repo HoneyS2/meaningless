@@ -54,3 +54,8 @@ for key, value in foo.items():
 bar = [1, 3, 5, 7, 9]
 for i in bar:
     print(i+1)
+
+# for 4
+foe = [(1, 2), (3, 4), (5, 6)]
+for i, j in foe:
+    print(i*j)
