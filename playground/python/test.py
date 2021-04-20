@@ -40,7 +40,7 @@ print(math.ceil(1.1))
 print(math.floor(1.9))
 '''
 
-
+'''
 # for 1
 for i in range(1, 11):
     print(i)
@@ -59,3 +59,7 @@ for i in bar:
 foe = [(1, 2), (3, 4), (5, 6)]
 for i, j in foe:
     print(i*j)
+'''
+
+foo = input('Input text: ')
+print('Result: '+foo)
