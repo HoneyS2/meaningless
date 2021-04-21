@@ -63,3 +63,5 @@ for i, j in foe:
 
 foo = input('Input text: ')
 print('Result: '+foo)
+bar = int(input('Input num: '))
+print('Result:', bar)
