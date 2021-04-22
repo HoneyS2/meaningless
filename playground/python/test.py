@@ -1,6 +1,6 @@
 #import datetime
 #import time
-#import math
+import math
 
 #print("Hello, world!")
 
@@ -64,4 +64,4 @@ for i, j in foe:
 foo = input('Input text: ')
 print('Result: '+foo)
 bar = int(input('Input num: '))
-print('Result:', bar)
+print(bar, 'square:', math.pow(bar, 2))
