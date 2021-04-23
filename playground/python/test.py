@@ -61,7 +61,13 @@ for i, j in foe:
     print(i*j)
 '''
 
+'''
 foo = input('Input text: ')
 print('Result: '+foo)
 bar = int(input('Input num: '))
 print(bar, 'square:', math.pow(bar, 2))
+'''
+
+foo = int(input('Input num for multiplication table: '))
+for i in range(1,10):
+    print(foo, '*', i, ':', i*foo)
