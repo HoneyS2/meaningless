@@ -68,6 +68,16 @@ bar = int(input('Input num: '))
 print(bar, 'square:', math.pow(bar, 2))
 '''
 
+'''
 foo = int(input('Input num for multiplication table: '))
 for i in range(1,10):
     print(foo, '*', i, ':', i*foo)
+'''
+
+foo = int(input('Input num: '))
+if foo < 10:
+    print('Lower than 10')
+elif foo == 10:
+    print('It\'s 10')
+else:
+    print('Higher than 10')
