@@ -5,4 +5,5 @@ let bar : Int
 
 foo = "ABC"
 bar = 123
-print(foo, "and", bar)
+//print(foo, "and", bar)
+print("\(foo) and \(bar)")
