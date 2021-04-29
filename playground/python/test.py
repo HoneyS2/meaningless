@@ -74,6 +74,7 @@ for i in range(1,10):
     print(foo, '*', i, ':', i*foo)
 '''
 
+'''
 foo = int(input('Input num: '))
 if foo < 10:
     print('Lower than 10')
@@ -81,3 +82,13 @@ elif foo == 10:
     print('It\'s 10')
 else:
     print('Higher than 10')
+'''
+
+def foo(n):
+    bar, i = 0, 1
+    while i <= n:
+        bar += i
+        i+=1
+    return bar
+
+print(foo(100))
