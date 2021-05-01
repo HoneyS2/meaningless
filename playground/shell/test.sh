@@ -28,3 +28,4 @@ END
 
 awk '{ print $1"-"$2 }' test.txt
 awk '/foo/' test.txt
+awk '$2 == "bar" { print $1 }' test.txt
