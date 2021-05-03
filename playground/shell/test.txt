@@ -1,2 +1,4 @@
-1 foo
-2 bar
+1 foo 10
+2 bar 9
+3 foe 8
+4 baz 7
