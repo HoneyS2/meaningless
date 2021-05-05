@@ -32,3 +32,4 @@ awk '$2 == "bar" { print $1 }' test.txt
 awk 'NR == 1 { print $0; exit }' test.txt
 awk '{ print $0 }' test.txt | sort -r
 awk '{ sum += $3 } END { print "Sum: "sum }' test.txt
+awk 'length($3) < 2 { print $0 }' test.txt
