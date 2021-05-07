@@ -37,3 +37,4 @@ awk 'length($3) < 2 { print $0 }' test.txt
 END
 
 sed 's/10/100/' test.txt
+sed '/foo/d' test.txt
