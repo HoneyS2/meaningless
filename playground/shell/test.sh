@@ -38,3 +38,4 @@ END
 
 sed 's/10/100/' test.txt
 sed '/foo/d' test.txt
+sed 'a//' test.txt
