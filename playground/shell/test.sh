@@ -36,6 +36,10 @@ awk '{ sum += $3 } END { print "Sum: "sum }' test.txt
 awk 'length($3) < 2 { print $0 }' test.txt
 END
 
+: <<END
 sed 's/10/100/' test.txt
 sed '/foo/d' test.txt
 sed 'a\\' test.txt
+END
+
+sed '/^$/d' test.txt
