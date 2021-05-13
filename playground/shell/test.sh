@@ -41,6 +41,7 @@ sed 's/10/100/' test.txt
 sed '/foo/d' test.txt
 sed 'a\\' test.txt
 sed '/^$/d' test.txt
+sed '3q' test.txt
 END
 
-sed '3q' test.txt
+sed '2d;4d;5d' test.txt
