@@ -84,6 +84,7 @@ else:
     print('Higher than 10')
 '''
 
+'''
 def foo(n):
     bar, i = 0, 1
     while i <= n:
@@ -92,3 +93,8 @@ def foo(n):
     return bar
 
 print(foo(100))
+'''
+
+def foo():
+    pass
+foo()
