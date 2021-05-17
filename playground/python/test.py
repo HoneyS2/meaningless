@@ -95,6 +95,6 @@ def foo(n):
 print(foo(100))
 '''
 
-def foo():
-    pass
-foo()
+def foo(str):
+    print(str[3:6])
+foo('abcdefg')
