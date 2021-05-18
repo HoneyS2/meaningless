@@ -95,6 +95,11 @@ def foo(n):
 print(foo(100))
 '''
 
+'''
 def foo(str):
     print(str[3:6])
 foo('abcdefg')
+'''
+
+print(eval("11111"+"22222"))
+print(eval("11111+22222"))
