@@ -101,5 +101,9 @@ def foo(str):
 foo('abcdefg')
 '''
 
+'''
 print(eval("11111"+"22222"))
 print(eval("11111+22222"))
+'''
+
+print(len('foo'))
