@@ -140,10 +140,12 @@ let hello = (str) => {
 hello('world')
 */
 
+/*
 let foo = [1, 3, 5, 7, 9]
 let bar = foo.map(x => x + 1)
 console.log(foo)
 console.log(bar)
+*/
 
 /*
 let foo = ['a', 'b', 'c'];
@@ -161,3 +163,13 @@ bar[2] = 'd';
 console.log(foo);
 console.log(foe);
 */
+
+class Car {
+    constructor(name, speed) {
+        this.name = name;
+        this.speed = speed;
+    }
+}
+
+const foo = new Car('UltraSuper', 351);
+console.log(foo.name, foo.speed);
