@@ -165,11 +165,21 @@ console.log(foe);
 */
 
 class Car {
-    constructor(name, speed) {
+    constructor(name, maxSpeed, speed=0) {
         this.name = name;
+        this.maxSpeed = maxSpeed;
         this.speed = speed;
+    }
+    speedUp(speed) {
+        if (this.speed + speed > this.maxSpeed) {
+            this.speed = this.maxSpeed;
+        } else {
+            this.speed += speed;
+        }
     }
 }
 
 const foo = new Car('UltraSuper', 351);
 console.log(foo.name, foo.speed);
+foo.speedUp(10);
+console.log(foo.speed);
