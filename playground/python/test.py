@@ -110,6 +110,7 @@ print(eval("11111+22222"))
 print(len('foo'))
 '''
 
+'''
 def make_incrementor(n):
     return lambda x: x + n
 foo = make_incrementor(1)
@@ -117,3 +118,6 @@ print(foo(0))
 print(foo(1))
 print(foo(2))
 print(foo(3))
+'''
+
+print(ord('a'))
