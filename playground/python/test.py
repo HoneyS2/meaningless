@@ -121,3 +121,4 @@ print(foo(3))
 '''
 
 print(ord('a'))
+print(chr(97))
