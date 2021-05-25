@@ -106,9 +106,8 @@ print(eval("11111"+"22222"))
 print(eval("11111+22222"))
 '''
 
-'''
 print(len('foo'))
-'''
+print(len([1, 2, 3, 4, 5]))
 
 '''
 def make_incrementor(n):
@@ -120,5 +119,7 @@ print(foo(2))
 print(foo(3))
 '''
 
+'''
 print(ord('a'))
 print(chr(97))
+'''
