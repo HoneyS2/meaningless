@@ -126,9 +126,13 @@ print(ord('a'))
 print(chr(97))
 '''
 
+'''
 foo = ['e', 'd', 'c', 'b', 'a']
 print(foo)
 print(sorted(foo))
 
 bar = [1, 2, 3, 4, 5]
 print(sorted(bar, reverse=True))
+'''
+
+print(round(1.5))
