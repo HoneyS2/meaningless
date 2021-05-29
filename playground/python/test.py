@@ -135,4 +135,10 @@ bar = [1, 2, 3, 4, 5]
 print(sorted(bar, reverse=True))
 '''
 
+'''
 print(round(1.5))
+'''
+
+foo = [1, 2, 3, 4, 5]
+print(min(foo))
+print(min(6, 7, 8, 9, 10))
