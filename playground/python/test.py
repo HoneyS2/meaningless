@@ -149,4 +149,8 @@ print(min(6, 7, 8, 9, 10))
 print(divmod(5, 2))
 '''
 
+'''
 print(hex(16))
+'''
+
+print(any([0, ""]))
