@@ -154,3 +154,4 @@ print(hex(16))
 '''
 
 print(any([0, ""]))
+print(any([0, 1]))
