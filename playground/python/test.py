@@ -158,7 +158,12 @@ print(any([0, ""]))
 print(any([0, 1]))
 '''
 
+'''
 foo = iter(range(3))
 print(next(foo))
 print(next(foo))
 print(next(foo))
+'''
+
+foo = 'bar'
+print(id(foo))
