@@ -149,8 +149,10 @@ print(min(6, 7, 8, 9, 10))
 print(divmod(5, 2))
 '''
 
+'''
 print(oct(8))
 print(hex(16))
+'''
 
 '''
 print(any([0, ""]))
@@ -168,3 +170,6 @@ print(next(foo))
 foo = 'bar'
 print(id(foo))
 '''
+
+print(list(range(1, 6)))
+print(list([1, 2, 3, 4, 5]))
