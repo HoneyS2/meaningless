@@ -171,5 +171,9 @@ foo = 'bar'
 print(id(foo))
 '''
 
+'''
 print(list(range(1, 6)))
 print(list([1, 2, 3, 4, 5]))
+'''
+
+print(list(zip("abc", "def")))
