@@ -149,10 +149,12 @@ print(min(6, 7, 8, 9, 10))
 print(divmod(5, 2))
 '''
 
+'''
 print(oct(8))
 print(hex(16))
 print(format(8, '#o'), format(8, 'o'))
 print(format(16, '#x'), format(16, 'x'))
+'''
 
 '''
 print(any([0, ""]))
@@ -185,3 +187,10 @@ foo = ['a', 'b', 'c', 'd', 'e']
 for key, val in enumerate(foo):
     print(key, val)
 '''
+
+foo = str('1234')
+bar = 1234
+
+print(foo == bar)
+print(type(foo))
+print(type(bar))
