@@ -188,9 +188,14 @@ for key, val in enumerate(foo):
     print(key, val)
 '''
 
+'''
 foo = str('1234')
 bar = 1234
 
 print(foo == bar)
 print(type(foo))
 print(type(bar))
+'''
+
+foo = '한글'
+print(repr(foo)+","+ascii(foo))
