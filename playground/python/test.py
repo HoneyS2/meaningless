@@ -156,10 +156,11 @@ print(format(8, '#o'), format(8, 'o'))
 print(format(16, '#x'), format(16, 'x'))
 '''
 
-'''
 print(any([0, ""]))
 print(any([0, 1]))
-'''
+print(all([0, ""]))
+print(all([0, 1]))
+print(all([1]))
 
 '''
 foo = iter(range(3))
@@ -197,5 +198,7 @@ print(type(foo))
 print(type(bar))
 '''
 
+'''
 foo = '한글'
 print(repr(foo)+","+ascii(foo))
+'''
