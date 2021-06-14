@@ -181,9 +181,10 @@ print(list(range(1, 6)))
 print(list([1, 2, 3, 4, 5]))
 '''
 
-'''
-print(list(zip("abc", "def")))
-'''
+foo = "abc"
+bar = "def"
+print(list(zip(foo, bar)))
+print(list(zip(*zip(foo, bar))))
 
 '''
 foo = ['a', 'b', 'c', 'd', 'e']
@@ -205,5 +206,7 @@ foo = '한글'
 print(repr(foo)+","+ascii(foo))
 '''
 
+'''
 foo = hash(1)
 print(foo)
+'''
