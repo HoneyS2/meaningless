@@ -1,6 +1,7 @@
 #import datetime
 #import time
 #import math
+import os
 
 #print("Hello, world!")
 
@@ -181,10 +182,12 @@ print(list(range(1, 6)))
 print(list([1, 2, 3, 4, 5]))
 '''
 
+'''
 foo = "abc"
 bar = "def"
 print(list(zip(foo, bar)))
 print(list(zip(*zip(foo, bar))))
+'''
 
 '''
 foo = ['a', 'b', 'c', 'd', 'e']
@@ -210,3 +213,5 @@ print(repr(foo)+","+ascii(foo))
 foo = hash(1)
 print(foo)
 '''
+
+print(os.getcwd())
