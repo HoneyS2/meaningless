@@ -113,4 +113,5 @@ func main() {
 	fmt.Println(now.Minute())
 	fmt.Println(now.Second())
 	fmt.Println(now.Format(time.RFC3339))
+	fmt.Println(now.Unix())
 }
