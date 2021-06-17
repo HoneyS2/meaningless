@@ -215,3 +215,4 @@ print(foo)
 '''
 
 print(os.getcwd())
+print(os.uname())
