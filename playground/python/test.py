@@ -216,3 +216,5 @@ print(foo)
 
 print(os.getcwd())
 print(os.uname())
+print(os.getpid())
+print(os.getgid())
