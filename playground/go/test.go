@@ -125,4 +125,8 @@ func main() {
 	endDateTime, _ := time.ParseInLocation(dateTimeForm, "2021-06-27 23:59:59", loc)
 	fmt.Println(startDateTime.UTC())
 	fmt.Println(endDateTime.UTC())
+	
+	for i := startDateTime; i.Unix() <= endDateTime.Unix(); i = i.AddDate(0, 0, 1) {
+		fmt.Println(i)
+	}
 }
