@@ -127,6 +127,8 @@ func main() {
 	fmt.Println(endDateTime.UTC())
 	
 	for i := startDateTime; i.Unix() <= endDateTime.Unix(); i = i.AddDate(0, 0, 1) {
-		fmt.Println(i)
+		if (i.Weekday() == 1 || i.Weekday() == 3) {
+			fmt.Println(i)
+		}
 	}
 }
