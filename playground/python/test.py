@@ -1,7 +1,7 @@
-#import datetime
+import datetime
 #import time
 #import math
-import os
+#import os
 
 #print("Hello, world!")
 
@@ -10,6 +10,9 @@ now = datetime.datetime.now()
 print(now)
 print('{:%Y-%m-%d %H:%M:%S}'.format(now))
 '''
+
+now = datetime.date.today()
+print(now)
 
 '''
 start = time.time()
@@ -214,6 +217,7 @@ foo = hash(1)
 print(foo)
 '''
 
+'''
 print(os.getcwd())
 print(os.uname())
 print(os.getpid())
@@ -221,3 +225,4 @@ print(os.getgid())
 print(os.getlogin())
 print(os.times())
 print(os.environ)
+'''
