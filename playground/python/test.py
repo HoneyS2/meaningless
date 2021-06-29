@@ -13,6 +13,10 @@ print('{:%Y-%m-%d %H:%M:%S}'.format(now))
 
 now = datetime.date.today()
 print(now)
+print(now.year)
+print(now.month)
+print(now.day)
+print(now.weekday())
 
 '''
 start = time.time()
