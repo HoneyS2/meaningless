@@ -17,6 +17,8 @@ print(now.year)
 print(now.month)
 print(now.day)
 print(now.weekday())
+print(now.toordinal())
+print(datetime.date.fromordinal(737971))
 
 '''
 start = time.time()
