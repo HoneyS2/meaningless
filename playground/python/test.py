@@ -5,25 +5,29 @@ import datetime
 
 #print("Hello, world!")
 
-'''
+
 now = datetime.datetime.now()
 print(now)
 print('{:%Y-%m-%d %H:%M:%S}'.format(now))
-'''
 
-now = datetime.date.today()
-print(now)
-print(now.year)
-print(now.month)
-print(now.day)
-print(now.weekday())
-#print(now.toordinal())
+today = datetime.date.today()
+print(today)
+print(today.year)
+print(today.month)
+print(today.day)
+print(today.weekday())
+#print(today.toordinal())
 #print(datetime.date.fromordinal(737971))
 
-foo = datetime.timedelta(days=1)
+foo = datetime.timedelta(days=1, minutes=5)
 print(foo)
 bar = now + foo
 print(bar)
+
+foe = datetime.timedelta.max
+baz = datetime.timedelta.min
+print(foe)
+print(baz)
 
 '''
 start = time.time()
