@@ -21,6 +21,7 @@ print(today.weekday())
 
 foo = datetime.timedelta(days=1, minutes=5)
 print(foo)
+print(foo.total_seconds())
 bar = now + foo
 print(bar)
 
