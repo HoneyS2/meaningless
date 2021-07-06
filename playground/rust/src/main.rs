@@ -11,6 +11,9 @@ fn main() {
     let foo = "world";
     let bar = foo.to_string();
     hello_str(bar);
+
+    let foe = String::from("dlrow");
+    hello_str(foe);
 }
 
 fn hello_str(str: String) {
