@@ -8,14 +8,25 @@ fn main() {
     println!("{}", foo);
     */
 
+    /*
     let foo = "world";
     let bar = foo.to_string();
     hello_str(bar);
 
     let foe = String::from("dlrow");
     hello_str(foe);
+    */
+
+    let baz: u128 = 1234;
+    print_num(baz);
 }
 
+/*
 fn hello_str(str: String) {
     println!("Hello, {}!", str);
+}
+*/
+
+fn print_num(num: u128) {
+    println!("{}", num);
 }
