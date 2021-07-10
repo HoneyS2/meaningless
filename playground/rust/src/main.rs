@@ -22,6 +22,7 @@ fn main() {
     print_num(baz);
     */
 
+    /*
     let a = [1, 2, 3, 4, 5];
 
     //println!("{:?}", a);
@@ -29,7 +30,18 @@ fn main() {
     for element in a.iter().rev() {
         println!("{}", element)
     }
+    */
 
+    let mut foo = 1;
+    loop {
+        if foo > 10 {
+            println!("Done!");
+            break;
+        }
+
+        println!("{}", foo);
+        foo+=1;
+    }
 }
 
 /*
