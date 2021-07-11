@@ -37,9 +37,11 @@ fn main() {
         if foo > 10 {
             println!("Done!");
             break;
+        } else if foo == 5 {
+            println!("{}, Keep going!", foo);
+        } else {
+            println!("{}", foo);
         }
-
-        println!("{}", foo);
         foo+=1;
     }
 }
