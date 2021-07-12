@@ -17,6 +17,10 @@ fn main() {
     hello_str(foe);
     */
 
+    let mut foo = String::from("ABC");
+    foo.push_str("DEF");
+    println!("{}", foo);
+
     /*
     let baz: u128 = 1234;
     print_num(baz);
@@ -32,6 +36,7 @@ fn main() {
     }
     */
 
+    /*
     let mut foo = 1;
     loop {
         if foo > 10 {
@@ -44,6 +49,7 @@ fn main() {
         }
         foo+=1;
     }
+    */
 }
 
 /*
