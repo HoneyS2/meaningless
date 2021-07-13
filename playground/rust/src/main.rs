@@ -1,3 +1,5 @@
+use std::io;
+
 fn main() {
     // println!("Hello, world!");
 
@@ -17,9 +19,11 @@ fn main() {
     hello_str(foe);
     */
 
+    /*
     let mut foo = String::from("ABC");
     foo.push_str("DEF");
     println!("{}", foo);
+    */
 
     /*
     let baz: u128 = 1234;
@@ -50,6 +54,14 @@ fn main() {
         foo+=1;
     }
     */
+
+    println!("Input text: ");
+    let mut foo = String::new();
+
+    io::stdin()
+        .read_line(&mut foo)
+        .expect("Failed to read line");
+    println!("Result: {}", foo);
 }
 
 /*
