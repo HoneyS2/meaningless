@@ -58,10 +58,20 @@ fn main() {
     println!("Input text: ");
     let mut foo = String::new();
 
+    /*
     io::stdin()
         .read_line(&mut foo)
         .expect("Failed to read line");
     println!("Result: {}", foo);
+    */
+
+    match io::stdin().read_line(&mut foo) {
+        Ok(n) => {
+            println!("{} bytes read", n);
+            println!("Result: {}", foo);
+        }
+        Err(error) => println!("Failed to read line - error: {}", error)
+    }
 }
 
 /*
