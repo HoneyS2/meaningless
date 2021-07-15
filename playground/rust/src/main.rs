@@ -1,4 +1,4 @@
-use std::io;
+//use std::io;
 
 fn main() {
     // println!("Hello, world!");
@@ -55,15 +55,14 @@ fn main() {
     }
     */
 
+    /*
     println!("Input text: ");
     let mut foo = String::new();
 
-    /*
     io::stdin()
         .read_line(&mut foo)
         .expect("Failed to read line");
     println!("Result: {}", foo);
-    */
 
     match io::stdin().read_line(&mut foo) {
         Ok(n) => {
@@ -72,6 +71,10 @@ fn main() {
         }
         Err(error) => println!("Failed to read line - error: {}", error)
     }
+    */
+
+    let c = 'c';
+    println!("{}", c);
 }
 
 /*
