@@ -1,3 +1,4 @@
+use rand::Rng;
 //use std::io;
 
 fn main() {
@@ -73,8 +74,13 @@ fn main() {
     }
     */
 
+    /*
     let c = 'c';
     println!("{}", c);
+    */
+
+    let foo = rand::thread_rng().gen_range(1..101);
+    println!("{}", foo);
 }
 
 /*
