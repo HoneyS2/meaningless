@@ -1,5 +1,6 @@
 use rand::Rng;
-//use std::io;
+use std::cmp::Ordering;
+use std::io;
 
 fn main() {
     // println!("Hello, world!");
@@ -79,8 +80,22 @@ fn main() {
     println!("{}", c);
     */
 
-    let foo = rand::thread_rng().gen_range(1..101);
-    println!("{}", foo);
+    let foo = rand::thread_rng().gen_range(1..4);
+    println!("Answer: {}", foo);
+
+    println!("Input number: ");
+    let mut bar = String::new();
+    io::stdin()
+        .read_line(&mut bar)
+        .expect("Failed to read line");
+    let baz: u32 = bar.trim().parse().expect("Please type a number!");
+
+    match baz.cmp(&foo) {
+        Ordering::Less => println!("Too small"),
+        Ordering::Greater => println!("Too big"),
+        Ordering::Equal => println!("Ding-dong")
+    }
+
 }
 
 /*
