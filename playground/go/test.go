@@ -2,8 +2,8 @@ package main
 
 import (
         "fmt"
-	"time"
-	//"runtime"
+        //"time"
+        //"runtime"
         //"math"
 )
 
@@ -118,7 +118,8 @@ func main() {
 	fmt.Println(now.Add(time.Hour*1 + time.Minute*1 + time.Second*1))
 	fmt.Println(now.AddDate(0, 0, 1))
 	*/
-	
+
+    /*
 	dateTimeForm := "2006-01-02 15:04:05"
 	loc, _ := time.LoadLocation("Asia/Seoul")
 	startDateTime, _ := time.ParseInLocation(dateTimeForm, "2021-06-20 00:00:00", loc)
@@ -131,4 +132,10 @@ func main() {
 			fmt.Println(i)
 		}
 	}
+    */
+
+    foo := map[string]interface{}{
+        "hello": "world",
+    }
+    fmt.Println(foo)
 }
