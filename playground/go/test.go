@@ -136,6 +136,10 @@ func main() {
 
     foo := map[string]interface{}{
         "hello": "world",
+        "car": struct {
+            name string
+            speed int
+        }{"bar", 100},
     }
     fmt.Println(foo)
 }
