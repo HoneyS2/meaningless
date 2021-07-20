@@ -7,6 +7,11 @@ import (
         //"math"
 )
 
+type Student struct {
+    Name string
+    Score float64
+}
+
 /*
 type Vertex struct {
         X, Y float64
@@ -134,6 +139,7 @@ func main() {
 	}
     */
 
+    /*
     foo := map[string]interface{}{
         "hello": "world",
         "car": struct {
@@ -142,4 +148,8 @@ func main() {
         }{"bar", 100},
     }
     fmt.Println(foo)
+    */
+
+    a := &Student{Name: "Foo", Score: 100.0}
+    fmt.Printf("%+v\n", *a)
 }
