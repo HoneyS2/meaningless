@@ -12,6 +12,14 @@ type Student struct {
     Score float64
 }
 
+func (s *Student) DoStudy(studyType string) {
+    if studyType == "hard" {
+        s.Score += 10
+    } else {
+        s.Score += 1
+    }
+}
+
 /*
 type Vertex struct {
         X, Y float64
@@ -151,5 +159,7 @@ func main() {
     */
 
     a := &Student{Name: "Foo", Score: 100.0}
+    fmt.Printf("%+v\n", *a)
+    a.DoStudy("easy")
     fmt.Printf("%+v\n", *a)
 }
