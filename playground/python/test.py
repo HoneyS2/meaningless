@@ -1,11 +1,12 @@
-import datetime
+#import datetime
 #import time
 #import math
 #import os
+import re
 
 #print("Hello, world!")
 
-
+'''
 now = datetime.datetime.now()
 print(now)
 print('{:%Y-%m-%d %H:%M:%S}'.format(now))
@@ -29,6 +30,7 @@ foe = datetime.timedelta.max
 baz = datetime.timedelta.min
 print(foe)
 print(baz)
+'''
 
 '''
 start = time.time()
@@ -242,3 +244,8 @@ print(os.getlogin())
 print(os.times())
 print(os.environ)
 '''
+
+foo = re.search('^[a-zA-Z]+', 'abcd1234')
+bar = re.search('[0-9]+', 'abcd1234')
+print(foo)
+print(bar)
