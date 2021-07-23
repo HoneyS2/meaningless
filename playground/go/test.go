@@ -12,6 +12,8 @@ type Student struct {
     Score float64
 }
 
+type Students []*Student
+
 func (s *Student) DoStudy(studyType string) {
     if studyType == "hard" {
         s.Score += 10
@@ -158,8 +160,11 @@ func main() {
     fmt.Println(foo)
     */
 
-    a := &Student{Name: "Foo", Score: 100.0}
-    fmt.Printf("%+v\n", *a)
-    a.DoStudy("easy")
-    fmt.Printf("%+v\n", *a)
+    s := &Students{{Name: "Foo", Score: 100.0}, {Name: "Bar", Score: 90.0}}
+    for key, val := range *s {
+            fmt.Println(key, val)
+            val.DoStudy("hard")
+    }
+    fmt.Printf("%+v\n", (*s)[0])
+    fmt.Printf("%+v\n", (*s)[1])
 }
