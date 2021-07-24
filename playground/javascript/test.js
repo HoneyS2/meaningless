@@ -164,6 +164,7 @@ console.log(foo);
 console.log(foe);
 */
 
+/*
 class Car {
     constructor(name, maxSpeed, speed=0) {
         this.name = name;
@@ -183,3 +184,7 @@ const foo = new Car('UltraSuper', 351);
 console.log(foo.name, foo.speed);
 foo.speedUp(10);
 console.log(foo.speed);
+*/
+
+let foo = JSON.stringify({"hello": "world"})
+console.log(foo);
