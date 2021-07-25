@@ -188,3 +188,5 @@ console.log(foo.speed);
 
 let foo = JSON.stringify({"hello": "world"})
 console.log(foo);
+let bar = JSON.parse(foo);
+console.log(bar);
