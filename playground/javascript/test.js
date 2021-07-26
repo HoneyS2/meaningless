@@ -186,7 +186,16 @@ foo.speedUp(10);
 console.log(foo.speed);
 */
 
+/*
 let foo = JSON.stringify({"hello": "world"})
 console.log(foo);
 let bar = JSON.parse(foo);
 console.log(bar);
+*/
+
+const foo = ['one', 'two', 'three'];
+console.log(foo);
+const [red, yellow, green] = foo;
+console.log(red);
+console.log(yellow);
+console.log(green);
