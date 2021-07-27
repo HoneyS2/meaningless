@@ -17,6 +17,7 @@ $bar2 = array_unique($foo2);
 print_r($bar2);
 */
 
+/*
 # 4. String test
 $str1 = "foo";
 $str2 = "bar";
@@ -25,3 +26,9 @@ $str4 = $str1.", ".$str2."!";
 print_r($str3);
 print_r(PHP_EOL);
 print_r($str4);
+*/
+
+# 5. var_dump
+$foo = array("hello", "world");
+print_r($foo);
+var_dump($foo);
