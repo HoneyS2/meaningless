@@ -28,7 +28,6 @@ print_r(PHP_EOL);
 print_r($str4);
 */
 
-
 # 5. var_dump
 /*
 $foo = array("hello", "world");
@@ -37,6 +36,7 @@ var_dump($foo);
 */
 
 # 6. implode, explode
+/*
 $foo = ['a', 'b', 'c', 'd', 'e'];
 $bar = implode(',', $foo);
 print_r($bar);
@@ -44,3 +44,9 @@ echo PHP_EOL;
 $foe = $bar;
 $baz = explode(',', $foe);
 print_r($baz);
+*/
+
+# 7. Spaceship operator
+$foo = 100;
+$bar = 90;
+print_r($foo<=>$bar);
