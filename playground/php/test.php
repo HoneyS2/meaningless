@@ -47,6 +47,13 @@ print_r($baz);
 */
 
 # 7. Spaceship operator
+/*
 $foo = 100;
 $bar = 90;
 print_r($foo<=>$bar);
+*/
+
+# 8. Null coalescing operator
+//$bar = 1;
+$foo = $bar ?? 100;
+print_r($foo);
