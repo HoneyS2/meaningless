@@ -54,6 +54,14 @@ print_r($foo<=>$bar);
 */
 
 # 8. Null coalescing operator
+/*
 //$bar = 1;
 $foo = $bar ?? 100;
 print_r($foo);
+*/
+
+# 9. array_chunk
+$foo = ['a', 'b', 'c', 'd', 'e'];
+foreach (array_chunk($foo, 2) as $key => $value) {
+    print_r($value);
+}
