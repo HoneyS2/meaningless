@@ -247,5 +247,5 @@ print(os.environ)
 
 foo = re.search('^[a-zA-Z]+', 'abcd1234')
 bar = re.search('[0-9]+', 'abcd1234')
-print(foo)
-print(bar)
+print(foo.group(0))
+print(bar.group(0))
