@@ -61,7 +61,14 @@ print_r($foo);
 */
 
 # 9. array_chunk
+/*
 $foo = ['a', 'b', 'c', 'd', 'e'];
 foreach (array_chunk($foo, 2) as $key => $value) {
     print_r($value);
 }
+*/
+
+# 10. in_array
+$foo = ['a', 'b', 'c'];
+$bar = in_array('a', $foo);
+var_dump($bar);
