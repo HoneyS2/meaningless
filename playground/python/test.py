@@ -249,3 +249,6 @@ foo = re.search('^[a-zA-Z]+', 'abcd1234')
 bar = re.search('[0-9]+', 'abcd1234')
 print(foo.group(0))
 print(bar.group(0))
+
+foe = re.sub('[!]+', '~', 'Hello, world!')
+print(foe)
