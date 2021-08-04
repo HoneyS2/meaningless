@@ -252,3 +252,5 @@ print(bar.group(0))
 
 foe = re.sub('[!]+', '~', 'Hello, world!')
 print(foe)
+baz = re.findall('^[a-zA-Z]+', 'abcd1234')
+print(baz)
