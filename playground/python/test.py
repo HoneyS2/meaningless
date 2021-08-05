@@ -245,6 +245,7 @@ print(os.times())
 print(os.environ)
 '''
 
+'''
 foo = re.search('^[a-zA-Z]+', 'abcd1234')
 bar = re.search('[0-9]+', 'abcd1234')
 print(foo.group(0))
@@ -254,3 +255,13 @@ foe = re.sub('[!]+', '~', 'Hello, world!')
 print(foe)
 baz = re.findall('^[a-zA-Z]+', 'abcd1234')
 print(baz)
+'''
+
+foo = ['a', 'b', 'c']
+print(foo)
+foo.append('d')
+print(foo)
+foo.pop()
+print(foo)
+foo.pop()
+print(foo)
