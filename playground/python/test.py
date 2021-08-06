@@ -2,7 +2,8 @@
 #import time
 #import math
 #import os
-import re
+#import re
+import json
 
 #print("Hello, world!")
 
@@ -257,6 +258,7 @@ baz = re.findall('^[a-zA-Z]+', 'abcd1234')
 print(baz)
 '''
 
+'''
 foo = ['a', 'b', 'c']
 print(foo)
 foo.append('d')
@@ -265,3 +267,11 @@ foo.pop()
 print(foo)
 foo.pop()
 print(foo)
+'''
+
+foo = ['a', 'b', 'c', 'd', ['111','222','333'], 999]
+print(foo)
+bar = json.dumps(foo)
+print(bar)
+foe = json.loads(bar)
+print(foe)
