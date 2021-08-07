@@ -3,7 +3,8 @@
 #import math
 #import os
 #import re
-import json
+#import json
+from urllib.request import urlopen
 
 #print("Hello, world!")
 
@@ -269,9 +270,16 @@ foo.pop()
 print(foo)
 '''
 
+'''
 foo = ['a', 'b', 'c', 'd', ['111','222','333'], 999]
 print(foo)
 bar = json.dumps(foo)
 print(bar)
 foe = json.loads(bar)
 print(foe)
+'''
+
+with urlopen('https://github.com') as response:
+    for line in response:
+        line = line.decode('utf-8')
+        print(line)
