@@ -1,10 +1,11 @@
-#import datetime
+import calendar
+import datetime
 #import time
 #import math
 #import os
 #import re
 #import json
-from urllib.request import urlopen
+#from urllib.request import urlopen
 
 #print("Hello, world!")
 
@@ -33,6 +34,12 @@ baz = datetime.timedelta.min
 print(foe)
 print(baz)
 '''
+
+now = datetime.datetime.now()
+year = int('{:%Y}'.format(now))
+month = int('{:%-m}'.format(now))
+calendar.setfirstweekday(6)
+calendar.prmonth(year, month)
 
 '''
 start = time.time()
@@ -279,7 +286,9 @@ foe = json.loads(bar)
 print(foe)
 '''
 
+'''
 with urlopen('https://github.com') as response:
     for line in response:
         line = line.decode('utf-8')
         print(line)
+'''
