@@ -1,11 +1,12 @@
-import calendar
-import datetime
+#import calendar
+#import datetime
 #import time
 #import math
 #import os
 #import re
 #import json
 #from urllib.request import urlopen
+from decimal import *
 
 #print("Hello, world!")
 
@@ -35,11 +36,13 @@ print(foe)
 print(baz)
 '''
 
+'''
 now = datetime.datetime.now()
 year = int('{:%Y}'.format(now))
 month = int('{:%-m}'.format(now))
 calendar.setfirstweekday(6)
 calendar.prmonth(year, month)
+'''
 
 '''
 start = time.time()
@@ -292,3 +295,8 @@ with urlopen('https://github.com') as response:
         line = line.decode('utf-8')
         print(line)
 '''
+
+foo = round(0.7 * 1.05, 2)
+print(foo)
+bar = round(Decimal('0.7') * Decimal('1.05'), 2)
+print(bar)
