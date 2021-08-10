@@ -6,7 +6,7 @@
 #import re
 #import json
 #from urllib.request import urlopen
-from decimal import *
+#from decimal import *
 
 #print("Hello, world!")
 
@@ -296,7 +296,18 @@ with urlopen('https://github.com') as response:
         print(line)
 '''
 
+'''
 foo = round(0.7 * 1.05, 2)
 print(foo)
 bar = round(Decimal('0.7') * Decimal('1.05'), 2)
 print(bar)
+'''
+
+while True:
+    try:
+        num = int(input("Please enter a number: "))
+        break
+    except ValueError:
+        print("That was no valid number.")
+    finally:
+        print("Ha-Ha!")
