@@ -280,6 +280,13 @@ foo.pop()
 print(foo)
 '''
 
+foo = [1, 2, 3, 4, 5]
+print(foo)
+del foo[3:]
+print(foo)
+del foo[:]
+print(foo)
+
 '''
 foo = ['a', 'b', 'c', 'd', ['111','222','333'], 999]
 print(foo)
@@ -303,6 +310,7 @@ bar = round(Decimal('0.7') * Decimal('1.05'), 2)
 print(bar)
 '''
 
+'''
 while True:
     try:
         num = int(input("Please enter a number: "))
@@ -311,3 +319,4 @@ while True:
         print("That was no valid number.")
     finally:
         print("Ha-Ha!")
+'''
