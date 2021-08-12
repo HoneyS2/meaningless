@@ -15,6 +15,7 @@ var foo: String?
 print(foo)
 */
 
+/*
 var bar: String = "123"
 print(bar)
 print(type(of:bar))
@@ -22,3 +23,17 @@ print(type(of:bar))
 var baz: Int = Int(bar) ?? 0
 print(baz)
 print(type(of:baz))
+*/
+
+struct Person {
+    var name: String
+    var age: Int = 0
+
+    init(_ name: String, _ age: Int) {
+        self.name = name
+        self.age = age
+    }
+}
+
+var foo = Person("Foo", 27)
+print(foo)
