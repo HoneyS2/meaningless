@@ -29,11 +29,13 @@ struct Person {
     var name: String
     var age: Int = 0
 
-    init(_ name: String, _ age: Int) {
+    init(name: String, age: Int) {
         self.name = name
         self.age = age
     }
 }
 
-var foo = Person("Foo", 27)
-print(foo)
+//var foo = Person("Foo", 27)
+//print(foo)
+var bar = Person(name: "Bar", age: 28)
+print(bar)
