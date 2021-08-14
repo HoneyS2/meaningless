@@ -45,4 +45,9 @@ sed '3q' test.txt
 sed '2d;4d;5d' test.txt
 END
 
+: <<END
 sed 'c\\Ha-ha!' test.txt
+END
+
+foo=$(uname)
+echo $foo
