@@ -49,5 +49,12 @@ END
 sed 'c\\Ha-ha!' test.txt
 END
 
+: <<END
 foo=$(uname)
 echo $foo
+END
+
+for foo in a b c
+do
+    echo $foo
+done
