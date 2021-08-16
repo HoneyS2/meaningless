@@ -54,7 +54,8 @@ foo=$(uname)
 echo $foo
 END
 
-for foo in a b c
+bar="a b c d e"
+for foo in $bar
 do
     echo $foo
 done
