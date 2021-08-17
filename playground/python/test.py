@@ -7,6 +7,7 @@
 #import json
 #from urllib.request import urlopen
 #from decimal import *
+import random
 
 #print("Hello, world!")
 
@@ -280,12 +281,14 @@ foo.pop()
 print(foo)
 '''
 
+'''
 foo = [1, 2, 3, 4, 5]
 print(foo)
 del foo[3:]
 print(foo)
 del foo[:]
 print(foo)
+'''
 
 '''
 foo = ['a', 'b', 'c', 'd', ['111','222','333'], 999]
@@ -320,3 +323,6 @@ while True:
     finally:
         print("Ha-Ha!")
 '''
+
+foo = random.choice(['a', 'b', 'c', 'd', 'e'])
+print(foo)
