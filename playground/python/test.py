@@ -326,3 +326,5 @@ while True:
 
 foo = random.choice(['a', 'b', 'c', 'd', 'e'])
 print(foo)
+bar = random.random()
+print(bar)
