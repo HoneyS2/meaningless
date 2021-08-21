@@ -96,6 +96,12 @@ for i, j in foe:
     print(i*j)
 '''
 
+# for 5
+questions = ['name', 'job']
+answers = ['foo', 'bar']
+for q, a in zip(questions, answers):
+    print('What\'s your {0}?  It\'s {1}.'.format(q, a))
+
 '''
 foo = input('Input text: ')
 print('Result: '+foo)
@@ -324,6 +330,7 @@ while True:
         print("Ha-Ha!")
 '''
 
+'''
 foo = random.choice(['a', 'b', 'c', 'd', 'e'])
 print(foo)
 bar = random.random()
@@ -333,3 +340,4 @@ foe.sort()
 print(foe)
 baz = random.randrange(1, 11)
 print(baz)
+'''
