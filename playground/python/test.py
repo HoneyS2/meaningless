@@ -1,13 +1,13 @@
 #import calendar
 #import datetime
 #import time
-#import math
+import math
 #import os
 #import re
 #import json
 #from urllib.request import urlopen
 #from decimal import *
-import random
+#import random
 
 #print("Hello, world!")
 
@@ -94,13 +94,21 @@ for i in bar:
 foe = [(1, 2), (3, 4), (5, 6)]
 for i, j in foe:
     print(i*j)
-'''
 
 # for 5
 questions = ['name', 'job']
 answers = ['foo', 'bar']
 for q, a in zip(questions, answers):
     print('What\'s your {0}?  It\'s {1}.'.format(q, a))
+'''
+
+# for 6
+foo = [-1, 0, 1, 2, 3.33, 4, 5, 6.0, 7, 8, 99.9, float('NaN')]
+bar = []
+for value in foo:
+    if not math.isnan(value):
+        bar.append(value)
+print(bar)
 
 '''
 foo = input('Input text: ')
