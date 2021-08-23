@@ -1,7 +1,7 @@
 #import calendar
 #import datetime
 #import time
-import math
+#import math
 #import os
 #import re
 #import json
@@ -100,7 +100,6 @@ questions = ['name', 'job']
 answers = ['foo', 'bar']
 for q, a in zip(questions, answers):
     print('What\'s your {0}?  It\'s {1}.'.format(q, a))
-'''
 
 # for 6
 foo = [-1, 0, 1, 2, 3.33, 4, 5, 6.0, 7, 8, 99.9, float('NaN')]
@@ -109,6 +108,7 @@ for value in foo:
     if not math.isnan(value):
         bar.append(value)
 print(bar)
+'''
 
 '''
 foo = input('Input text: ')
@@ -349,3 +349,9 @@ print(foe)
 baz = random.randrange(1, 11)
 print(baz)
 '''
+
+input = input("Input numbers: (ex. \"1 2 3 4 5\")\n")
+numbers = input.split(" ")
+numbers = list(map(int, numbers))
+max = max(numbers)
+print("Max value is: ", max, sep="")
