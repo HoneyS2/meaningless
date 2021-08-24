@@ -8,6 +8,7 @@
 #from urllib.request import urlopen
 #from decimal import *
 #import random
+import textwrap
 
 #print("Hello, world!")
 
@@ -350,8 +351,16 @@ baz = random.randrange(1, 11)
 print(baz)
 '''
 
+'''
 input = input("Input numbers: (ex. \"1 2 3 4 5\")\n")
 numbers = input.split(" ")
 numbers = list(map(int, numbers))
 max = max(numbers)
 print("Max value is: ", max, sep="")
+'''
+
+foo = """Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."""
+print(foo, end="")
+print('\n')
+bar = textwrap.fill(foo, width=65)
+print(bar)
