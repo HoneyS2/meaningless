@@ -377,6 +377,9 @@ pp.pprint(foo)
 pp2.pprint(foo)
 '''
 
+'''
 print(sys.argv)
 sys.stderr.write('Goodbye, world!\n')
 sys.exit()
+'''
+print(sys.copyright)
