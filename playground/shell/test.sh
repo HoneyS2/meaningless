@@ -54,8 +54,20 @@ foo=$(uname)
 echo $foo
 END
 
+: <<END
 bar="a b c d e"
 for foo in $bar
 do
     echo $foo
+done
+END
+
+array=(
+    'Hello::world'
+)
+
+for index in "${array[@]}"; do
+    KEY="${index%%::*}"
+    VALUE="${index##*::}"
+    echo "$KEY, $VALUE!"
 done
