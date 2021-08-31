@@ -10,7 +10,7 @@
 #import random
 #import textwrap
 #import pprint
-import sys
+#import sys
 
 #print("Hello, world!")
 
@@ -287,16 +287,16 @@ baz = re.findall('^[a-zA-Z]+', 'abcd1234')
 print(baz)
 '''
 
-'''
 foo = ['a', 'b', 'c']
 print(foo)
 foo.append('d')
 print(foo)
 foo.pop()
 print(foo)
+foo.extend(['e', 'f'])
+print(foo)
 foo.pop()
 print(foo)
-'''
 
 '''
 foo = [1, 2, 3, 4, 5]
@@ -383,5 +383,5 @@ sys.stderr.write('Goodbye, world!\n')
 sys.exit()
 print(sys.copyright)
 print(sys.byteorder)
-'''
 print(sys.platform)
+'''
