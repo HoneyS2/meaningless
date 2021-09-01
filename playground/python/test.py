@@ -297,6 +297,8 @@ foo.extend(['e', 'f'])
 print(foo)
 foo.pop()
 print(foo)
+foo.insert(0, 'z')
+print(foo)
 
 '''
 foo = [1, 2, 3, 4, 5]
