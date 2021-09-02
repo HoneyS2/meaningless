@@ -1,5 +1,5 @@
 #import calendar
-#import datetime
+import datetime
 #import time
 #import math
 #import os
@@ -39,6 +39,13 @@ baz = datetime.timedelta.min
 print(foe)
 print(baz)
 '''
+
+start_date = datetime.date(2021, 1, 1)
+end_date = datetime.date(2022, 1, 1)
+delta = datetime.timedelta(days=1)
+while start_date <= end_date:
+    print(start_date.strftime("%Y-%m-%d"))
+    start_date += delta
 
 '''
 now = datetime.datetime.now()
@@ -287,6 +294,7 @@ baz = re.findall('^[a-zA-Z]+', 'abcd1234')
 print(baz)
 '''
 
+'''
 foo = ['a', 'b', 'c']
 print(foo)
 foo.append('d')
@@ -299,6 +307,7 @@ foo.pop()
 print(foo)
 foo.insert(0, 'z')
 print(foo)
+'''
 
 '''
 foo = [1, 2, 3, 4, 5]
