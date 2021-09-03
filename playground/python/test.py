@@ -10,7 +10,7 @@ import datetime
 #import random
 #import textwrap
 #import pprint
-#import sys
+import sys
 
 #print("Hello, world!")
 
@@ -40,12 +40,14 @@ print(foe)
 print(baz)
 '''
 
+'''
 start_date = datetime.date(2021, 1, 1)
 end_date = datetime.date(2022, 1, 1)
 delta = datetime.timedelta(days=1)
 while start_date <= end_date:
     print(start_date.strftime("%Y-%m-%d"))
     start_date += delta
+'''
 
 '''
 now = datetime.datetime.now()
@@ -396,3 +398,4 @@ print(sys.copyright)
 print(sys.byteorder)
 print(sys.platform)
 '''
+print(sys.base_prefix)
