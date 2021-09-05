@@ -398,5 +398,7 @@ print(sys.copyright)
 print(sys.byteorder)
 print(sys.platform)
 print(sys.base_prefix)
-'''
 print(sys.getdefaultencoding())
+'''
+print(sys.int_info)
+print(sys.float_info)
