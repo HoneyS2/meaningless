@@ -401,6 +401,8 @@ print(sys.base_prefix)
 print(sys.getdefaultencoding())
 print(sys.int_info)
 print(sys.float_info)
-'''
 print(sys.getsizeof(0))
 print(sys.getsizeof(1))
+'''
+print(2**31 - 1, 2**63 - 1, sys.maxsize)
+print(sys.maxunicode, format(sys.maxunicode, '#x'))
