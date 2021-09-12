@@ -10,7 +10,8 @@ import datetime
 #import random
 #import textwrap
 #import pprint
-import sys
+#import sys
+import logging
 
 #print("Hello, world!")
 
@@ -408,5 +409,12 @@ print(sys.maxunicode, format(sys.maxunicode, '#x'))
 print(sys.version)
 print(sys.api_version)
 print(sys.version_info)
-'''
 print(sys.is_finalizing())
+'''
+
+logging.basicConfig(level=logging.DEBUG)
+logging.debug('Debugging information')
+logging.info('Informational message')
+logging.warning('Warning:config file %s not found', 'foo')
+logging.error('Error occurred')
+logging.critical('Critical error -- shutting down')
