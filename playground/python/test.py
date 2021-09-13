@@ -412,7 +412,7 @@ print(sys.version_info)
 print(sys.is_finalizing())
 '''
 
-logging.basicConfig(level=logging.DEBUG)
+#logging.basicConfig(level=logging.DEBUG)
 logging.debug('Debugging information')
 logging.info('Informational message')
 logging.warning('Warning:config file %s not found', 'foo')
