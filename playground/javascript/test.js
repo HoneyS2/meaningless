@@ -147,6 +147,16 @@ console.log(foo)
 console.log(bar)
 */
 
+let foo = {
+    str: "Hello, world!",
+    bar: function() {
+        setTimeout(() => {
+            console.log(this.str)
+        }, 500)
+    }
+}
+foo.bar()
+
 /*
 let foo = ['a', 'b', 'c'];
 let bar = [1, ...foo, 2];
@@ -193,9 +203,11 @@ let bar = JSON.parse(foo);
 console.log(bar);
 */
 
+/*
 const foo = ['one', 'two', 'three'];
 console.log(foo);
 const [red, yellow, green] = foo;
 console.log(red);
 console.log(yellow);
 console.log(green);
+*/
