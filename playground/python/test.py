@@ -11,7 +11,8 @@ import datetime
 #import textwrap
 #import pprint
 #import sys
-import logging
+#import logging
+import statistics
 
 #print("Hello, world!")
 
@@ -412,9 +413,16 @@ print(sys.version_info)
 print(sys.is_finalizing())
 '''
 
+'''
 #logging.basicConfig(level=logging.DEBUG)
 logging.debug('Debugging information')
 logging.info('Informational message')
 logging.warning('Warning:config file %s not found', 'foo')
 logging.error('Error occurred')
 logging.critical('Critical error -- shutting down')
+'''
+
+data = [1.25, 2.35, 7.5, 1.95, 6.0, 5.5]
+print(statistics.mean(data))
+print(statistics.median(data))
+print(statistics.variance(data))
