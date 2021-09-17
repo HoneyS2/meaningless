@@ -13,7 +13,8 @@ import datetime
 #import sys
 #import logging
 #import statistics
-import glob
+#import glob
+import gzip
 
 #print("Hello, world!")
 
@@ -430,5 +431,13 @@ print(statistics.median(data))
 print(statistics.variance(data))
 '''
 
+'''
 foo = glob.glob('*.py')
 print(foo)
+'''
+
+data = b"abcdefg"
+data2 = gzip.compress(data)
+print(data2)
+data3 = gzip.decompress(data2)
+print(data3)
