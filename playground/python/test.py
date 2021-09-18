@@ -2,7 +2,7 @@
 import datetime
 #import time
 #import math
-#import os
+import os
 #import re
 #import json
 #from urllib.request import urlopen
@@ -14,7 +14,7 @@ import datetime
 #import logging
 #import statistics
 #import glob
-import gzip
+#import gzip
 
 #print("Hello, world!")
 
@@ -278,7 +278,6 @@ foo = hash(1)
 print(foo)
 '''
 
-'''
 print(os.getcwd())
 print(os.uname())
 print(os.getpid())
@@ -286,7 +285,7 @@ print(os.getgid())
 print(os.getlogin())
 print(os.times())
 print(os.environ)
-'''
+os.system('echo "Hello, world!"')
 
 '''
 foo = re.search('^[a-zA-Z]+', 'abcd1234')
@@ -436,8 +435,10 @@ foo = glob.glob('*.py')
 print(foo)
 '''
 
+'''
 data = b"abcdefg"
 data2 = gzip.compress(data)
 print(data2)
 data3 = gzip.decompress(data2)
 print(data3)
+'''
