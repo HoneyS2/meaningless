@@ -1,8 +1,8 @@
 #import calendar
-import datetime
+#import datetime
 #import time
 #import math
-import os
+#import os
 #import re
 #import json
 #from urllib.request import urlopen
@@ -278,6 +278,7 @@ foo = hash(1)
 print(foo)
 '''
 
+'''
 print(os.getcwd())
 print(os.uname())
 print(os.getpid())
@@ -286,6 +287,7 @@ print(os.getlogin())
 print(os.times())
 print(os.environ)
 os.system('echo "Hello, world!"')
+'''
 
 '''
 foo = re.search('^[a-zA-Z]+', 'abcd1234')
@@ -442,3 +444,8 @@ print(data2)
 data3 = gzip.decompress(data2)
 print(data3)
 '''
+
+def foo():
+    """Hello, world!"""
+    pass
+print(foo.__doc__)
