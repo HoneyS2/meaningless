@@ -445,7 +445,11 @@ data3 = gzip.decompress(data2)
 print(data3)
 '''
 
+'''
 def foo():
     """Hello, world!"""
     pass
 print(foo.__doc__)
+'''
+
+print(locals())
