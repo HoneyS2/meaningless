@@ -452,4 +452,10 @@ def foo():
 print(foo.__doc__)
 '''
 
-print(locals())
+#print(locals())
+
+def foo():
+    print("Hello, world!")
+
+if __name__ == '__main__':
+    foo()
