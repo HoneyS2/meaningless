@@ -454,8 +454,19 @@ print(foo.__doc__)
 
 #print(locals())
 
+'''
 def foo():
     print("Hello, world!")
 
 if __name__ == '__main__':
     foo()
+'''
+
+class car:
+    def __init__(self, name, speed):
+        self.name = name
+        self.speed = speed
+
+foo = car('UltraSuper', 351)
+print(foo.name, foo.speed)
+print(getattr(foo, 'name'), getattr(foo, 'speed'))
