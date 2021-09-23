@@ -469,4 +469,4 @@ class car:
 
 foo = car('UltraSuper', 351)
 print(foo.name, foo.speed)
-print(getattr(foo, 'name'), getattr(foo, 'speed'))
+print(getattr(foo, 'name'), getattr(foo, 'speed'), getattr(foo, 'price', 600000))
