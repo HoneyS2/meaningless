@@ -469,6 +469,7 @@ class car:
 
 foo = car('UltraSuper', 351)
 setattr(foo, 'engine', 'V12')
-print(foo.name, foo.speed)
-print(getattr(foo, 'name'), getattr(foo, 'speed'), getattr(foo, 'price', 600000))
+#print(foo.name, foo.speed)
+#print(getattr(foo, 'name'), getattr(foo, 'speed'), getattr(foo, 'price', 600000))
 print(foo.__dict__)
+print(vars(foo))
