@@ -11,6 +11,11 @@ Apple **Banana** ~~Cat~~ `Dog` *Egg* **_Flower_** <u>grapes</u>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 ```
 
+```javascript
+let foo = "bar"
+console.log(foo)
+```
+
 > Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 > > Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 > > > Lorem ipsum dolor sit amet, consectetur adipiscing elit.
