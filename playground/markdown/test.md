@@ -48,6 +48,8 @@ Another Heading level 2
 2. banana
 3. cat
 
+- [x] foo
+- [ ] bar
 ---
 
 [Go to GitHub](https://github.com "Go to GitHub")
