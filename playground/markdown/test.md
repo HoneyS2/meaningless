@@ -52,4 +52,4 @@ Another Heading level 2
 - [ ] bar
 ---
 
-[Go to GitHub](https://github.com "Go to GitHub")
+![GitHub Favicon](https://github.com/favicon.ico) [Go to GitHub](https://github.com "Go to GitHub")
