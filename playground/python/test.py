@@ -379,6 +379,16 @@ max = max(numbers)
 print("Max value is: ", max, sep="")
 '''
 
+input = input("Input numbers: (ex. \"1 2 3 4 5\")\n")
+numbers = input.split(" ")
+numbers = list(map(int, numbers))
+
+def is_even(n):
+    return True if n % 2 == 0 else False
+
+even = filter(is_even, numbers)
+print("The even numbers: ", list(even), sep="")
+
 '''
 foo = """Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."""
 print(foo, end="")
@@ -462,6 +472,7 @@ if __name__ == '__main__':
     foo()
 '''
 
+'''
 class car:
     def __init__(self, name, speed):
         self.name = name
@@ -473,3 +484,4 @@ setattr(foo, 'engine', 'V12')
 #print(getattr(foo, 'name'), getattr(foo, 'speed'), getattr(foo, 'price', 600000))
 print(foo.__dict__)
 print(vars(foo))
+'''
