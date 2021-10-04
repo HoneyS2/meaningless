@@ -372,12 +372,18 @@ print(baz)
 '''
 
 '''
-input = input("Input numbers: (ex. \"1 2 3 4 5\")\n")
-numbers = input.split(" ")
+input_var = input("Input numbers: (ex. \"1 2 3 4 5\")\n")
+numbers = input_var.split(" ")
 numbers = list(map(int, numbers))
-max = max(numbers)
-print("Max value is: ", max, sep="")
+max_val = max(numbers)
+print("Max value is: ", max_val, sep="")
 '''
+
+input_var = input("Input numbers: (ex. \"1 2 3 4 5\")\n")
+numbers = input_var.split(" ")
+numbers = list(map(int, numbers))
+sum_val = sum(numbers)
+print("Sum value is: ", sum_val, sep="")
 
 '''
 input = input("Input numbers: (ex. \"1 2 3 4 5\")\n")
@@ -489,9 +495,11 @@ print(foo.__dict__)
 print(vars(foo))
 '''
 
+'''
 def func(a: str, b: str = 'world') -> str:
     print("Annotations:", func.__annotations__)
     return a + ', ' + b + '!'
 
 foo = func('Hello')
 print(foo)
+'''
