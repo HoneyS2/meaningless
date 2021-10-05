@@ -15,6 +15,7 @@
 #import statistics
 #import glob
 #import gzip
+import keyword
 
 #print("Hello, world!")
 
@@ -379,11 +380,13 @@ max_val = max(numbers)
 print("Max value is: ", max_val, sep="")
 '''
 
+'''
 input_var = input("Input numbers: (ex. \"1 2 3 4 5\")\n")
 numbers = input_var.split(" ")
 numbers = list(map(int, numbers))
 sum_val = sum(numbers)
 print("Sum value is: ", sum_val, sep="")
+'''
 
 '''
 input = input("Input numbers: (ex. \"1 2 3 4 5\")\n")
@@ -503,3 +506,5 @@ def func(a: str, b: str = 'world') -> str:
 foo = func('Hello')
 print(foo)
 '''
+
+print(keyword.kwlist)
