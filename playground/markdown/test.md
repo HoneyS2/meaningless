@@ -52,4 +52,5 @@ Another Heading level 2
 - [ ] bar
 ---
 
-[![GitHub Favicon](https://github.com/favicon.ico)](https://github.com) [Go to GitHub](https://github.com "Go to GitHub")
+<!--[![GitHub Favicon](https://github.com/favicon.ico)](https://github.com) [Go to GitHub](https://github.com "Go to GitHub")-->
+[<img src="https://github.com/favicon.ico" alt="GitHub Favicon" width="16" height="16" />](https://github.com) [Go to GitHub](https://github.com "Go to GitHub")
