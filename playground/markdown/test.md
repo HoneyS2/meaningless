@@ -11,6 +11,12 @@ Apple **Banana** ~~Cat~~ `Dog` *Egg* **_Flower_** <u>grapes</u>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 ```
 
+<pre>
+<code>
+print("Hello, world!")
+</code>
+</pre>
+
 ```javascript
 let foo = "bar"
 console.log(foo)
