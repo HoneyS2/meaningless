@@ -507,4 +507,17 @@ foo = func('Hello')
 print(foo)
 '''
 
+'''
 print(keyword.kwlist)
+'''
+
+with open('test.txt', 'r+') as file:
+    data = file.readlines()
+    print(data)
+    file.write('Goodbye, world~\n')
+file.closed
+
+with open('test.txt', 'r+') as file2:
+    data2 = file2.readlines()
+    print(data2)
+file2.closed
