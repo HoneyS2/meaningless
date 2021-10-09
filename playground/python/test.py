@@ -15,7 +15,8 @@
 #import statistics
 #import glob
 #import gzip
-import keyword
+#import keyword
+import requests
 
 #print("Hello, world!")
 
@@ -342,6 +343,11 @@ with urlopen('https://github.com') as response:
         print(line)
 '''
 
+foo = requests.get('https://github.com')
+print(foo)
+print(foo.status_code)
+print(foo.text)
+
 '''
 foo = round(0.7 * 1.05, 2)
 print(foo)
@@ -511,6 +517,7 @@ print(foo)
 print(keyword.kwlist)
 '''
 
+'''
 with open('test.txt', 'r+') as file:
     data = file.readlines()
     print(data)
@@ -521,3 +528,4 @@ with open('test.txt', 'r+') as file2:
     data2 = file2.readlines()
     print(data2)
 file2.closed
+'''
