@@ -346,7 +346,8 @@ with urlopen('https://github.com') as response:
 foo = requests.get('https://github.com')
 print(foo)
 print(foo.status_code)
-print(foo.text)
+print(foo.request.headers)
+#print(foo.text)
 
 '''
 foo = round(0.7 * 1.05, 2)
