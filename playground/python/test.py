@@ -343,8 +343,10 @@ with urlopen('https://github.com') as response:
         print(line)
 '''
 
-foo = requests.get('https://github.com')
+bar = {'hello': 'world'}
+foo = requests.get('https://github.com', params=bar)
 print(foo)
+print(foo.url)
 print(foo.status_code)
 print(foo.request.headers)
 #print(foo.text)
