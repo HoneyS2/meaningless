@@ -351,6 +351,14 @@ print(foo.status_code)
 print(foo.request.headers)
 #print(foo.text)
 
+baz = {'goodbye': 'world'}
+foe = requests.post('https://github.com', data=baz)
+print(foe)
+print(foe.url)
+print(foe.status_code)
+print(foe.request.headers)
+print(foe.request.body)
+
 '''
 foo = round(0.7 * 1.05, 2)
 print(foo)
