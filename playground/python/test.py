@@ -352,7 +352,8 @@ print(foo.request.headers)
 #print(foo.text)
 
 baz = {'goodbye': 'world'}
-foe = requests.post('https://github.com', data=baz)
+#foe = requests.post('https://github.com', data=baz)
+foe = requests.post('https://github.com', json=baz)
 print(foe)
 print(foe.url)
 print(foe.status_code)
