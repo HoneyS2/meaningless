@@ -344,14 +344,17 @@ with urlopen('https://github.com') as response:
 '''
 
 bar = {'hello': 'world'}
-foo = requests.get('https://github.com', params=bar)
+bar_two = {'world': 'hello'}
+foo = requests.get('https://github.com', params=bar, cookies=bar_two)
 print(foo)
 print(foo.url)
 print(foo.status_code)
 print(foo.request.method)
 print(foo.request.headers)
+print(foo.request._cookies)
 #print(foo.text)
 
+'''
 baz = {'goodbye': 'world'}
 #foe = requests.post('https://github.com', data=baz)
 foe = requests.post('https://github.com', json=baz)
@@ -361,6 +364,7 @@ print(foe.status_code)
 print(foe.request.method)
 print(foe.request.headers)
 print(foe.request.body)
+'''
 
 '''
 foo = round(0.7 * 1.05, 2)
