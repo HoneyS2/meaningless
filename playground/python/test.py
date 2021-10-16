@@ -16,7 +16,8 @@
 #import glob
 #import gzip
 #import keyword
-import requests
+#import requests
+import functools
 
 #print("Hello, world!")
 
@@ -343,6 +344,7 @@ with urlopen('https://github.com') as response:
         print(line)
 '''
 
+'''
 bar = {'hello': 'world'}
 bar_two = {'world': 'hello'}
 foo = requests.get('https://github.com', params=bar, cookies=bar_two)
@@ -353,6 +355,7 @@ print(foo.request.method)
 print(foo.request.headers)
 print(foo.request._cookies)
 #print(foo.text)
+'''
 
 '''
 baz = {'goodbye': 'world'}
@@ -547,3 +550,8 @@ with open('test.txt', 'r+') as file2:
     print(data2)
 file2.closed
 '''
+
+square = functools.partial(pow, exp=2)
+cube = functools.partial(pow, exp=3)
+print(square(2))
+print(cube(5))
