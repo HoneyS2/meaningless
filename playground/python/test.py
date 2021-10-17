@@ -17,7 +17,8 @@
 #import gzip
 #import keyword
 #import requests
-import functools
+#import functools
+import asyncio
 
 #print("Hello, world!")
 
@@ -551,7 +552,16 @@ with open('test.txt', 'r+') as file2:
 file2.closed
 '''
 
+'''
 square = functools.partial(pow, exp=2)
 cube = functools.partial(pow, exp=3)
 print(square(2))
 print(cube(5))
+'''
+
+async def foo():
+    print('Hello, ...')
+    await asyncio.sleep(1)
+    print('... world!')
+
+asyncio.run(foo())
