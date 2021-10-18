@@ -559,9 +559,14 @@ print(square(2))
 print(cube(5))
 '''
 
-async def foo():
+async def foo(bar: str):
     print('Hello, ...')
     await asyncio.sleep(1)
-    print('... world!')
+    print('... '+bar+'!')
 
-asyncio.run(foo())
+#asyncio.run(foo("world"))
+
+async def main():
+    await asyncio.gather(*[foo("A"), foo("B"), foo("C")])
+
+asyncio.run(main())
