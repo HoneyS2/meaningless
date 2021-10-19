@@ -567,6 +567,7 @@ async def foo(bar: str):
 #asyncio.run(foo("world"))
 
 async def main():
-    await asyncio.gather(*[foo("A"), foo("B"), foo("C")])
+    jobs = [foo("A"), foo("B"), foo("C")]
+    await asyncio.gather(*jobs)
 
 asyncio.run(main())
