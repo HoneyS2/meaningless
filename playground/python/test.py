@@ -515,7 +515,6 @@ if __name__ == '__main__':
 class car:
     def __init__(self, name, speed):
         self.name = name
-numbers = input.split(" ")
         self.speed = speed
 
 foo = car('UltraSuper', 351)
