@@ -18,7 +18,7 @@
 #import keyword
 #import requests
 #import functools
-import asyncio
+#import asyncio
 
 #print("Hello, world!")
 
@@ -558,6 +558,7 @@ print(square(2))
 print(cube(5))
 '''
 
+'''
 async def foo(bar: str):
     print('Hello, ...')
     await asyncio.sleep(1)
@@ -570,3 +571,9 @@ async def main():
     await asyncio.gather(*jobs)
 
 asyncio.run(main())
+'''
+
+foo = bool(1)
+bar = bool(0)
+print(foo)
+print(bar)
