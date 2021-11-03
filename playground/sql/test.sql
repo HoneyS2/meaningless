@@ -5,6 +5,8 @@ SELECT `COLUMN` FROM `table` WHERE id = 1;
 
 # JOIN
 SELECT `COLUMN` FROM `table_A` AS A INNER JOIN `table_B` AS B ON A.Key = B.Key;
+SELECT `COLUMN` FROM `table_A` AS A LEFT JOIN `table_B` AS B ON A.Key = B.Key;
+SELECT `COLUMN` FROM `table_A` AS A RIGHT JOIN `table_B` AS B ON A.Key = B.Key;
 
 # DISTINCT
 SELECT DISTINCT `COLUMN` FROM `table`;
