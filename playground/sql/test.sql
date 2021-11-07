@@ -3,6 +3,10 @@ SELECT * FROM `table`;
 SELECT COUNT(*) FROM `table`;
 SELECT `COLUMN` FROM `table` WHERE id = 1;
 
+# UNION
+SELECT * FROM `table_A` UNION DISTINCT SELECT * FROM `table_B`;
+SELECT * FROM `table_A` UNION ALL SELECT * FROM `table_B`;
+
 # JOIN
 SELECT `COLUMN` FROM `table_A` AS A INNER JOIN `table_B` AS B ON A.Key = B.Key;
 SELECT `COLUMN` FROM `table_A` AS A LEFT JOIN `table_B` AS B ON A.Key = B.Key;
