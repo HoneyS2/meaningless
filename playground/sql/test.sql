@@ -1,7 +1,13 @@
 # SELECT
 SELECT * FROM `table`;
-SELECT COUNT(*) FROM `table`;
 SELECT `COLUMN` FROM `table` WHERE id = 1;
+
+# ORDER BY
+SELECT * FROM `table` ORDER BY id ASC;
+SELECT * FROM `table` ORDER BY id DESC;
+
+# COUNT
+SELECT COUNT(*) FROM `table`;
 
 # UNION
 SELECT * FROM `table_A` UNION DISTINCT SELECT * FROM `table_B`;
