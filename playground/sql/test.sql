@@ -2,6 +2,11 @@
 SELECT * FROM `table`;
 SELECT `COLUMN` FROM `table` WHERE id = 1;
 
+# LIMIT, OFFSET
+SELECT * FROM `table` LIMIT 10;
+SELECT * FROM `table` LIMIT 10 OFFSET 0;
+SELECT * FROM `table` LIMIT 0, 10;
+
 # ORDER BY
 SELECT * FROM `table` ORDER BY id ASC;
 SELECT * FROM `table` ORDER BY id DESC;
