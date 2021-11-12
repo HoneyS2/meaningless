@@ -2,6 +2,15 @@
 SELECT * FROM `table`;
 SELECT `COLUMN` FROM `table` WHERE id = 1;
 
+# SUBQUERY
+SELECT *
+FROM `table_A`
+WHERE `COLUMN` IN (
+    SELECT `COLUMN`
+    FROM `table_B`
+)
+ORDER BY id DESC;
+
 # LIMIT, OFFSET
 SELECT * FROM `table` LIMIT 10;
 SELECT * FROM `table` LIMIT 10 OFFSET 0;
