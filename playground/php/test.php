@@ -69,6 +69,15 @@ foreach (array_chunk($foo, 2) as $key => $value) {
 */
 
 # 10. in_array
+/*
 $foo = ['a', 'b', 'c'];
 $bar = in_array('a', $foo);
 var_dump($bar);
+*/
+
+# 11. function arguments
+function foo($a, $b=null)
+{
+    print_r(func_get_args());
+}
+foo("a");
