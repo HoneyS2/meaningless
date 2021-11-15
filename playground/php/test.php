@@ -76,8 +76,14 @@ var_dump($bar);
 */
 
 # 11. function arguments
+/*
 function foo($a, $b=null)
 {
     print_r(func_get_args());
 }
 foo("a");
+*/
+
+# 12. hash
+$foo = hash('sha256', "bar".time());
+print_r($foo);
