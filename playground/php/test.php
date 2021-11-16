@@ -87,3 +87,6 @@ foo("a");
 # 12. hash
 $foo = hash('sha256', "bar".time());
 print_r($foo);
+
+# 13. Millisecond
+print_r(round(microtime(true) * 1000));
