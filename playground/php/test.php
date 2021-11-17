@@ -85,8 +85,15 @@ foo("a");
 */
 
 # 12. hash
+/*
 $foo = hash('sha256', "bar".time());
 print_r($foo);
+*/
 
 # 13. Millisecond
-print_r(round(microtime(true) * 1000));
+//print_r(round(microtime(true) * 1000));
+
+# 14. filter_var
+# ref. https://www.php.net/manual/en/filter.filters.validate.php
+$foo = "https://www.php.net";
+print_r(filter_var($foo, FILTER_VALIDATE_URL));
