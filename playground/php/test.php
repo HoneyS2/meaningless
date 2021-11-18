@@ -95,5 +95,14 @@ print_r($foo);
 
 # 14. filter_var
 # ref. https://www.php.net/manual/en/filter.filters.validate.php
+/*
 $foo = "https://www.php.net";
 print_r(filter_var($foo, FILTER_VALIDATE_URL));
+*/
+
+# 15. http_build_query
+$foo = ["key1" => "value1", "key2" => "value2"];
+print_r(http_build_query($foo));
+print_r(PHP_EOL);
+print_r(http_build_query($foo, '', ','));
+print_r(PHP_EOL);
