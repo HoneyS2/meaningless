@@ -101,8 +101,29 @@ print_r(filter_var($foo, FILTER_VALIDATE_URL));
 */
 
 # 15. http_build_query
+/*
 $foo = ["key1" => "value1", "key2" => "value2"];
 print_r(http_build_query($foo));
 print_r(PHP_EOL);
 print_r(http_build_query($foo, '', ','));
 print_r(PHP_EOL);
+*/
+
+# 16. array_multisort with array_column
+$foo = [
+    [
+        'id' => 1,
+        'score' => 90
+    ],
+    [
+        'id' => 2,
+        'score' => 100
+    ],
+    [
+        'id' => 3,
+        'score' => 95
+    ],
+];
+print_r($foo);
+array_multisort(array_column($foo, 'score'), SORT_DESC, SORT_REGULAR, $foo);
+print_r($foo);
