@@ -110,6 +110,7 @@ print_r(PHP_EOL);
 */
 
 # 16. array_multisort with array_column
+/*
 $foo = [
     [
         'id' => 1,
@@ -127,3 +128,14 @@ $foo = [
 print_r($foo);
 array_multisort(array_column($foo, 'score'), SORT_DESC, SORT_REGULAR, $foo);
 print_r($foo);
+*/
+
+# 17. sort
+$foo = [1, 5, 3, 2, 4];
+$bar = ['a', 'e', 'c', 'b', 'd'];
+print_r($foo);
+print_r($bar);
+sort($foo);
+sort($bar);
+print_r($foo);
+print_r($bar);
