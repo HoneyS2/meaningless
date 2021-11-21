@@ -131,6 +131,7 @@ print_r($foo);
 */
 
 # 17. sort
+/*
 $foo = [1, 5, 3, 2, 4];
 $bar = ['a', 'e', 'c', 'b', 'd'];
 print_r($foo);
@@ -139,3 +140,12 @@ sort($foo);
 sort($bar);
 print_r($foo);
 print_r($bar);
+*/
+
+# 18. strpos
+$foo = "Hello";
+if (strpos("Hello, world!", $foo) !== false) {
+    print_r("Found!");
+} else {
+    print_r("Not found.");
+}
