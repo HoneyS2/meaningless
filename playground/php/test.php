@@ -143,9 +143,16 @@ print_r($bar);
 */
 
 # 18. strpos
+/*
 $foo = "Hello";
 if (strpos("Hello, world!", $foo) !== false) {
     print_r("Found!");
 } else {
     print_r("Not found.");
 }
+*/
+
+# 19. date with strtotime
+date_default_timezone_set('Asia/Seoul');
+$foo = date("Y-m-d H:i:s", time());
+print_r(date("Y-m-d H:i:s", strtotime($foo." +1 day")));
