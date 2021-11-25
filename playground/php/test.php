@@ -153,6 +153,11 @@ if (strpos("Hello, world!", $foo) !== false) {
 */
 
 # 19. date with strtotime
+/*
 date_default_timezone_set('Asia/Seoul');
 $foo = date("Y-m-d H:i:s", time());
 print_r(date("Y-m-d H:i:s", strtotime($foo." +1 day")));
+*/
+
+# 20. Get the last day of the month
+print_r(date("t"));
