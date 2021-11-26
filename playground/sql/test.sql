@@ -93,3 +93,7 @@ DO
 DELETE FROM `table` WHERE `created_at` < DATE_ADD(NOW(), INTERVAL -15 DAY);
 
 DROP EVENT `scheduler`;
+
+# CHECK PROCESSLIST & KILL
+SHOW PROCESSLIST;
+KILL 1234; -- processlist_id
