@@ -97,3 +97,7 @@ DROP EVENT `scheduler`;
 # CHECK PROCESSLIST & KILL
 SHOW PROCESSLIST;
 KILL 1234; -- processlist_id
+
+# CHECK VERSION
+SHOW VARIABLES LIKE 'version';
+SELECT version();
