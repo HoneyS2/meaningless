@@ -160,4 +160,10 @@ print_r(date("Y-m-d H:i:s", strtotime($foo." +1 day")));
 */
 
 # 20. Get the last day of the month
-print_r(date("t"));
+//print_r(date("t"));
+
+# 21. strtolower, strtoupper
+$foo = "Hello, world!";
+print_r(strtolower($foo));
+print_r(PHP_EOL);
+print_r(strtoupper($foo));
