@@ -163,7 +163,16 @@ print_r(date("Y-m-d H:i:s", strtotime($foo." +1 day")));
 //print_r(date("t"));
 
 # 21. strtolower, strtoupper
+/*
 $foo = "Hello, world!";
 print_r(strtolower($foo));
 print_r(PHP_EOL);
 print_r(strtoupper($foo));
+*/
+
+# 22. stristr
+$foo = "Hello, world!";
+print_r(stristr($foo, " ", true));
+print_r(PHP_EOL);
+print_r(stristr($foo, " "));
+print_r(PHP_EOL);
