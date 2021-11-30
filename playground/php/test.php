@@ -171,8 +171,14 @@ print_r(strtoupper($foo));
 */
 
 # 22. stristr
+/*
 $foo = "Hello, world!";
 print_r(stristr($foo, " ", true));
 print_r(PHP_EOL);
 print_r(stristr($foo, " "));
 print_r(PHP_EOL);
+*/
+
+# 23. htmlspecialchars
+$foo = "<h1>Hello, world!</h1>";
+print_r(htmlspecialchars($foo));
