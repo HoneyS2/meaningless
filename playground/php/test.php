@@ -180,5 +180,16 @@ print_r(PHP_EOL);
 */
 
 # 23. htmlspecialchars
+/*
 $foo = "<h1>Hello, world!</h1>";
 print_r(htmlspecialchars($foo));
+*/
+
+# 24. preg_match, preg_match_all
+var_dump(preg_match('/[0-9]{3}/', 'abc123def456', $foo));
+print_r(PHP_EOL);
+print_r($foo);
+print_r(PHP_EOL);
+var_dump(preg_match_all('/[0-9]{3}/', 'abc123def456', $bar));
+print_r(PHP_EOL);
+print_r($bar);
