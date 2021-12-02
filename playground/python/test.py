@@ -128,6 +128,11 @@ for value in foo:
     if not math.isnan(value):
         bar.append(value)
 print(bar)
+
+# for 7
+foo = ['a', 'b', 'c', 'd', 'e']
+for key, val in enumerate(foo):
+    print(key, val)
 '''
 
 '''
@@ -255,12 +260,6 @@ foo = "abc"
 bar = "def"
 print(list(zip(foo, bar)))
 print(list(zip(*zip(foo, bar))))
-'''
-
-'''
-foo = ['a', 'b', 'c', 'd', 'e']
-for key, val in enumerate(foo):
-    print(key, val)
 '''
 
 '''
@@ -573,7 +572,9 @@ async def main():
 asyncio.run(main())
 '''
 
+'''
 foo = bool(1)
 bar = bool(0)
 print(foo)
 print(bar)
+'''
