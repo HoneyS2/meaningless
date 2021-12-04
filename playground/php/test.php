@@ -197,5 +197,13 @@ print_r($bar);
 */
 
 # 25. define
+/*
 define('FOO', 'bar');
 print_r(FOO);
+*/
+
+# 26. Ternary operator
+$foo = 100;
+//$foo = null;
+$bar = (empty($foo)) ? 1 : $foo;
+print_r($bar);
