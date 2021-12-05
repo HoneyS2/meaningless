@@ -203,7 +203,17 @@ print_r(FOO);
 */
 
 # 26. Ternary operator
+/*
 $foo = 100;
 //$foo = null;
 $bar = (empty($foo)) ? 1 : $foo;
 print_r($bar);
+*/
+
+# 27. nl2br
+$foo = 'abc
+123
+def
+456
+';
+print_r(nl2br($foo));
