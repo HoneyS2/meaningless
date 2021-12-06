@@ -179,11 +179,12 @@ print_r(stristr($foo, " "));
 print_r(PHP_EOL);
 */
 
-# 23. htmlspecialchars
-/*
+# 23. htmlspecialchars, htmlspecialchars_decode
 $foo = "<h1>Hello, world!</h1>";
-print_r(htmlspecialchars($foo));
-*/
+$bar = htmlspecialchars($foo);
+print_r($bar);
+print_r(PHP_EOL);
+print_r(htmlspecialchars_decode($bar));
 
 # 24. preg_match, preg_match_all
 /*
@@ -211,9 +212,11 @@ print_r($bar);
 */
 
 # 27. nl2br
+/*
 $foo = 'abc
 123
 def
 456
 ';
 print_r(nl2br($foo));
+*/
