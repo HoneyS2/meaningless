@@ -180,11 +180,13 @@ print_r(PHP_EOL);
 */
 
 # 23. htmlspecialchars, htmlspecialchars_decode
+/*
 $foo = "<h1>Hello, world!</h1>";
 $bar = htmlspecialchars($foo);
 print_r($bar);
 print_r(PHP_EOL);
 print_r(htmlspecialchars_decode($bar));
+*/
 
 # 24. preg_match, preg_match_all
 /*
@@ -220,3 +222,9 @@ def
 ';
 print_r(nl2br($foo));
 */
+
+# 28. substr, iconv_substr
+$foo = "가나다라마바사자차카타파하";
+print_r(substr($foo, 0, 9));
+print_r(PHP_EOL);
+print_r(iconv_substr($foo, 0, 9, "utf-8"));
