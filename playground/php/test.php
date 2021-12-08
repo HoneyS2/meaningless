@@ -224,7 +224,13 @@ print_r(nl2br($foo));
 */
 
 # 28. substr, iconv_substr
+/*
 $foo = "가나다라마바사자차카타파하";
 print_r(substr($foo, 0, 9));
 print_r(PHP_EOL);
 print_r(iconv_substr($foo, 0, 9, "utf-8"));
+*/
+
+# 29. strip_tags
+$foo = "<h1>Hello, world!</h1>";
+print_r(strip_tags($foo));
