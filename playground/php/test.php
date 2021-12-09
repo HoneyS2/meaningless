@@ -232,5 +232,11 @@ print_r(iconv_substr($foo, 0, 9, "utf-8"));
 */
 
 # 29. strip_tags
+/*
 $foo = "<h1>Hello, world!</h1>";
 print_r(strip_tags($foo));
+*/
+
+# 30. strlen
+$foo = "abc";
+print_r(strlen($foo));
