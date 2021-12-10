@@ -238,5 +238,11 @@ print_r(strip_tags($foo));
 */
 
 # 30. strlen
+/*
 $foo = "abc";
 print_r(strlen($foo));
+*/
+
+# 31. str_split
+$foo = "abc";
+print_r(str_split($foo));
