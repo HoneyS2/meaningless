@@ -246,3 +246,5 @@ print_r(strlen($foo));
 # 31. str_split
 $foo = "abc";
 print_r(str_split($foo));
+$bar = 100;
+print_r(str_split($bar));
