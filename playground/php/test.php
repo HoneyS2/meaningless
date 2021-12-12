@@ -244,7 +244,13 @@ print_r(strlen($foo));
 */
 
 # 31. str_split
+/*
 $foo = "abc";
 print_r(str_split($foo));
 $bar = 100;
 print_r(str_split($bar));
+*/
+
+# 32. str_replace
+$foo = "Hello, world!";
+print_r(str_replace("Hello", "Goodbye", $foo));
