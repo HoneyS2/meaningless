@@ -578,3 +578,6 @@ bar = bool(0)
 print(foo)
 print(bar)
 '''
+
+foo = frozenset([1, 2, 3])
+print(foo)
