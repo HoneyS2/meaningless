@@ -252,5 +252,13 @@ print_r(str_split($bar));
 */
 
 # 32. str_replace
+/*
 $foo = "Hello, world!";
 print_r(str_replace("Hello", "Goodbye", $foo));
+*/
+
+# 33. trim
+$foo = "   abc   ";
+print_r($foo);
+print_r(PHP_EOL);
+print_r(trim($foo));
