@@ -130,8 +130,7 @@ array_multisort(array_column($foo, 'score'), SORT_DESC, SORT_REGULAR, $foo);
 print_r($foo);
 */
 
-# 17. sort
-/*
+# 17. sort, rsort
 $foo = [1, 5, 3, 2, 4];
 $bar = ['a', 'e', 'c', 'b', 'd'];
 print_r($foo);
@@ -140,7 +139,10 @@ sort($foo);
 sort($bar);
 print_r($foo);
 print_r($bar);
-*/
+rsort($foo);
+rsort($bar);
+print_r($foo);
+print_r($bar);
 
 # 18. strpos
 /*
@@ -258,7 +260,9 @@ print_r(str_replace("Hello", "Goodbye", $foo));
 */
 
 # 33. trim
+/*
 $foo = "   abc   ";
 print_r($foo);
 print_r(PHP_EOL);
 print_r(trim($foo));
+*/
