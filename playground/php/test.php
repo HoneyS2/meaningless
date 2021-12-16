@@ -131,6 +131,7 @@ print_r($foo);
 */
 
 # 17. sort, rsort
+/*
 $foo = [1, 5, 3, 2, 4];
 $bar = ['a', 'e', 'c', 'b', 'd'];
 print_r($foo);
@@ -143,6 +144,7 @@ rsort($foo);
 rsort($bar);
 print_r($foo);
 print_r($bar);
+*/
 
 # 18. strpos
 /*
@@ -266,3 +268,7 @@ print_r($foo);
 print_r(PHP_EOL);
 print_r(trim($foo));
 */
+
+# 34. gettimeofday, getdate
+print_r(gettimeofday());
+print_r(getdate());
