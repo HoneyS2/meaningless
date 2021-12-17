@@ -270,5 +270,24 @@ print_r(trim($foo));
 */
 
 # 34. gettimeofday, getdate
+/*
 print_r(gettimeofday());
 print_r(getdate());
+*/
+
+# 35. date_default_timezone_get, date_default_timezone_set
+# ref. https://www.php.net/manual/en/timezones.php
+print_r(date_default_timezone_get());
+print_r(PHP_EOL);
+print_r(date('Y-m-d H:i:s'));
+print_r(PHP_EOL);
+date_default_timezone_set('America/New_York');
+print_r(date_default_timezone_get());
+print_r(PHP_EOL);
+print_r(date('Y-m-d H:i:s'));
+print_r(PHP_EOL);
+date_default_timezone_set('Asia/Seoul');
+print_r(date_default_timezone_get());
+print_r(PHP_EOL);
+print_r(date('Y-m-d H:i:s'));
+print_r(PHP_EOL);
