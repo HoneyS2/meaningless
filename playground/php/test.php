@@ -277,6 +277,7 @@ print_r(getdate());
 
 # 35. date_default_timezone_get, date_default_timezone_set
 # ref. https://www.php.net/manual/en/timezones.php
+/*
 print_r(date_default_timezone_get());
 print_r(PHP_EOL);
 print_r(date('Y-m-d H:i:s'));
@@ -291,3 +292,9 @@ print_r(date_default_timezone_get());
 print_r(PHP_EOL);
 print_r(date('Y-m-d H:i:s'));
 print_r(PHP_EOL);
+*/
+
+# 36. ini_set
+# ref. https://www.php.net/manual/en/ini.list.php
+ini_set("memory_limit", "512M");
+ini_set("memory_limit", "-1");
