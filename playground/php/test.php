@@ -296,5 +296,11 @@ print_r(PHP_EOL);
 
 # 36. ini_set
 # ref. https://www.php.net/manual/en/ini.list.php
+/*
 ini_set("memory_limit", "512M");
 ini_set("memory_limit", "-1");
+*/
+
+# 37. array_sum
+$foo = [1, 2, 3, 4];
+print_r(array_sum($foo));
