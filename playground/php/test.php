@@ -302,5 +302,12 @@ ini_set("memory_limit", "-1");
 */
 
 # 37. array_sum
+/*
 $foo = [1, 2, 3, 4];
 print_r(array_sum($foo));
+*/
+
+# 38. array_intersect_assoc
+$foo = ['a' => 'apple', 'b' => 'banana', 'c' => 'cat'];
+$bar = ['a' => 'apple', 'b' => 'ball', 'c' => 'cherry'];
+print_r(array_intersect_assoc($foo, $bar));
