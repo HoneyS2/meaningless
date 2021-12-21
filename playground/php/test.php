@@ -308,6 +308,13 @@ print_r(array_sum($foo));
 */
 
 # 38. array_intersect_assoc
+/*
 $foo = ['a' => 'apple', 'b' => 'banana', 'c' => 'cat'];
 $bar = ['a' => 'apple', 'b' => 'ball', 'c' => 'cherry'];
 print_r(array_intersect_assoc($foo, $bar));
+*/
+
+# 39. shuffle
+$foo = ['a', 'b', 'c', 'd', 'e'];
+shuffle($foo);
+print_r($foo);
