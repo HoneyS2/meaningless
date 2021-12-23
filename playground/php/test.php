@@ -95,11 +95,13 @@ print_r($foo);
 
 # 14. filter_var
 # ref. https://www.php.net/manual/en/filter.filters.validate.php
+/*
 $foo = "https://www.php.net";
 print_r(filter_var($foo, FILTER_VALIDATE_URL));
 print_r(PHP_EOL);
 $bar = "aaa@bbb.ccc";
 print_r(filter_var($bar, FILTER_VALIDATE_EMAIL));
+*/
 
 # 15. http_build_query
 /*
@@ -321,3 +323,7 @@ $foo = ['a', 'b', 'c', 'd', 'e'];
 shuffle($foo);
 print_r($foo);
 */
+
+# 40. array_key_exists
+$foo = ['hello' => 'world'];
+print_r(array_key_exists('hello', $foo));
