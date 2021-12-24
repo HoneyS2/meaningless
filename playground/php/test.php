@@ -327,3 +327,5 @@ print_r($foo);
 # 40. array_key_exists
 $foo = ['hello' => 'world'];
 print_r(array_key_exists('hello', $foo));
+print_r(PHP_EOL);
+print_r(key_exists('hello', $foo)); // Alias
