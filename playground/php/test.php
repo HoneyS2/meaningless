@@ -333,6 +333,20 @@ print_r(key_exists('hello', $foo)); // Alias
 */
 
 # 41. list
+/*
 $foo = array('Merry', 'Christmas');
 list($a, $b) = $foo;
 print_r("$a $b");
+*/
+
+# 42. array_reduce
+function sub($carry, $item)
+{
+    $carry -= $item;
+    return $carry;
+}
+
+$foo = [1, 2, 3, 4, 5];
+print_r(array_reduce($foo, "sub"));
+print_r(PHP_EOL);
+print_r(array_reduce($foo, "sub", 5));
