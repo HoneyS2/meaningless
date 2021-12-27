@@ -340,6 +340,7 @@ print_r("$a $b");
 */
 
 # 42. array_reduce
+/*
 function sub($carry, $item)
 {
     $carry -= $item;
@@ -350,3 +351,9 @@ $foo = [1, 2, 3, 4, 5];
 print_r(array_reduce($foo, "sub"));
 print_r(PHP_EOL);
 print_r(array_reduce($foo, "sub", 5));
+*/
+
+# 43. array_fill
+$foo = array_fill(0, 5, "bar");
+print_r($foo);
+
