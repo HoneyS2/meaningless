@@ -354,6 +354,11 @@ print_r(array_reduce($foo, "sub", 5));
 */
 
 # 43. array_fill
+/*
 $foo = array_fill(0, 5, "bar");
 print_r($foo);
+*/
 
+# 44. array_filp
+$foo = ['hello' => 'world'];
+print_r(array_flip($foo));
