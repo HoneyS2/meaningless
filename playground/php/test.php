@@ -360,5 +360,11 @@ print_r($foo);
 */
 
 # 44. array_filp
+/*
 $foo = ['hello' => 'world'];
 print_r(array_flip($foo));
+*/
+
+# 45. array_rand
+$foo = ['a', 'b', 'c'];
+print_r(array_rand($foo, 2));
