@@ -366,5 +366,13 @@ print_r(array_flip($foo));
 */
 
 # 45. array_rand
+/*
 $foo = ['a', 'b', 'c'];
 print_r(array_rand($foo, 2));
+*/
+
+# 46. array_key_first, array_key_last
+$foo = ['a' => 'apple', 'b' => 'banana', 'c' => 'cat'];
+print_r(array_key_first($foo));
+print_r(PHP_EOL);
+print_r(array_key_last($foo));
