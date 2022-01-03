@@ -147,6 +147,7 @@ console.log(foo)
 console.log(bar)
 */
 
+/*
 let foo = {
     str: "Hello, world!",
     bar: function() {
@@ -156,6 +157,7 @@ let foo = {
     }
 }
 foo.bar()
+*/
 
 /*
 let foo = ['a', 'b', 'c'];
@@ -211,3 +213,7 @@ console.log(red);
 console.log(yellow);
 console.log(green);
 */
+
+let foo = 'hello';
+let bar = foo ?? 'world';
+console.log(bar);
