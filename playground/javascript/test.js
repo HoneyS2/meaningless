@@ -214,6 +214,14 @@ console.log(yellow);
 console.log(green);
 */
 
+/*
 let foo = 'hello';
 let bar = foo ?? 'world';
 console.log(bar);
+*/
+
+let foo = [];
+foo.push('hello');
+console.log(foo);
+foo.pop();
+console.log(foo);
