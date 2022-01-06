@@ -220,8 +220,14 @@ let bar = foo ?? 'world';
 console.log(bar);
 */
 
+/*
 let foo = [];
 foo.push('hello');
 console.log(foo);
 foo.pop();
+console.log(foo);
+*/
+
+let foo = [1, 2, 3, 4, 5];
+foo.reverse();
 console.log(foo);
