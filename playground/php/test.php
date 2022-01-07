@@ -380,8 +380,15 @@ print_r(array_key_last($foo));
 */
 
 # 47. array_product
+/*
 $foo = [1, 2, 3, 4, 5];
 $bar = [];
 print_r(array_product($foo));
 print_r(PHP_EOL);
 print_r(array_product($bar));
+*/
+
+# 48. array_combine
+$foo = ['apple', 'banana', 'cat'];
+$bar = ['red', 'yellow', 'green'];
+print_r(array_combine($foo, $bar));
