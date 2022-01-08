@@ -389,6 +389,13 @@ print_r(array_product($bar));
 */
 
 # 48. array_combine
+/*
 $foo = ['apple', 'banana', 'cat'];
 $bar = ['red', 'yellow', 'green'];
 print_r(array_combine($foo, $bar));
+*/
+
+# 49. array_change_key_case
+$foo = ['Apple' => '1', 'Banana' => '2'];
+print_r(array_change_key_case($foo));
+print_r(array_change_key_case($foo, CASE_UPPER));
