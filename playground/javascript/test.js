@@ -228,6 +228,12 @@ foo.pop();
 console.log(foo);
 */
 
+/*
 let foo = [1, 2, 3, 4, 5];
 foo.reverse();
 console.log(foo);
+*/
+
+let foo = 'Hello, world!';
+console.log(foo.toUpperCase());
+console.log(foo.toLowerCase());
