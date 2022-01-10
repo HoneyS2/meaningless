@@ -234,6 +234,12 @@ foo.reverse();
 console.log(foo);
 */
 
+/*
 let foo = 'Hello, world!';
 console.log(foo.toUpperCase());
 console.log(foo.toLowerCase());
+*/
+
+const isOdd = (value) => value % 2 == 1;
+let foo = [1, 3, 5, 7, 10];
+console.log(foo.every(isOdd));
