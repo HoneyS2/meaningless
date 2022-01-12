@@ -246,8 +246,14 @@ let foo = [1, 3, 5, 7, 10];
 console.log(foo.every(isOdd));
 */
 
+/*
 let foo = Array(5);
 foo.fill('bar');
 console.log(foo);
 foo.fill('baz', 1, 4);
 console.log(foo);
+*/
+
+let foo = new Date();
+console.log(foo);
+console.log(foo.toLocaleString());
