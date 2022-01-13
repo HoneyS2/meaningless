@@ -254,6 +254,14 @@ foo.fill('baz', 1, 4);
 console.log(foo);
 */
 
+/*
 let foo = new Date();
 console.log(foo);
 console.log(foo.toLocaleString());
+*/
+
+let foo = ['a', 'b', 'c', 'a', 'b', 'c'];
+console.log(foo.indexOf('a'));
+console.log(foo.indexOf('c'));
+console.log(foo.lastIndexOf('a'));
+console.log(foo.lastIndexOf('c'));
