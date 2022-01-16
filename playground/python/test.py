@@ -579,5 +579,10 @@ print(foo)
 print(bar)
 '''
 
+'''
 foo = frozenset([1, 2, 3])
 print(foo)
+'''
+
+foo = ['apple', 'banana', 'cat', 'dog']
+print(foo.index('banana'))
