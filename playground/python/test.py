@@ -584,5 +584,11 @@ foo = frozenset([1, 2, 3])
 print(foo)
 '''
 
+'''
 foo = ['apple', 'banana', 'cat', 'dog']
 print(foo.index('banana'))
+'''
+
+foo = "applebananacatdog"
+print(foo.index('banana'))
+print(foo.find('zzz'))
