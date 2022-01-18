@@ -589,6 +589,13 @@ foo = ['apple', 'banana', 'cat', 'dog']
 print(foo.index('banana'))
 '''
 
+'''
 foo = "applebananacatdog"
 print(foo.index('banana'))
 print(foo.find('zzz'))
+'''
+
+foo = [1, 2, 2, 3, 3, 3]
+print(foo.count(1))
+print(foo.count(2))
+print(foo.count(3))
