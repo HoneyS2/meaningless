@@ -595,7 +595,15 @@ print(foo.index('banana'))
 print(foo.find('zzz'))
 '''
 
+'''
 foo = [1, 2, 2, 3, 3, 3]
 print(foo.count(1))
 print(foo.count(2))
 print(foo.count(3))
+'''
+
+foo = "123"
+print(foo.isnumeric())
+bar = "apple"
+print(bar.isupper())
+print(bar.islower())
