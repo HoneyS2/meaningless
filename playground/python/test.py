@@ -607,3 +607,7 @@ print(foo.isnumeric())
 bar = "apple"
 print(bar.isupper())
 print(bar.islower())
+foe = " "
+print(foe.isspace())
+baz = "Hello, World!"
+print(baz.istitle())
