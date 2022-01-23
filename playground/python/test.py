@@ -602,6 +602,7 @@ print(foo.count(2))
 print(foo.count(3))
 '''
 
+'''
 foo = "123"
 print(foo.isnumeric())
 bar = "apple"
@@ -611,3 +612,7 @@ foe = " "
 print(foe.isspace())
 baz = "Hello, World!"
 print(baz.istitle())
+'''
+
+foo = ['a', 'b', 'c']
+print(",".join(foo))
