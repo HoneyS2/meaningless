@@ -396,6 +396,13 @@ print_r(array_combine($foo, $bar));
 */
 
 # 49. array_change_key_case
+/*
 $foo = ['Apple' => '1', 'Banana' => '2'];
 print_r(array_change_key_case($foo));
 print_r(array_change_key_case($foo, CASE_UPPER));
+*/
+
+# 50. compact
+$foo = "1";
+$bar = "abc";
+print_r(compact(explode(' ', 'foo bar')));
