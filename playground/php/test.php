@@ -403,6 +403,13 @@ print_r(array_change_key_case($foo, CASE_UPPER));
 */
 
 # 50. compact
+/*
 $foo = "1";
 $bar = "abc";
 print_r(compact(explode(' ', 'foo bar')));
+*/
+
+# 51. array_pad
+$foo = [1, 2, 3];
+print_r(array_pad($foo, 5, 0));
+print_r(array_pad($foo, -5, 0));
