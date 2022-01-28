@@ -260,8 +260,15 @@ console.log(foo);
 console.log(foo.toLocaleString());
 */
 
+/*
 let foo = ['a', 'b', 'c', 'a', 'b', 'c'];
 console.log(foo.indexOf('a'));
 console.log(foo.indexOf('c'));
 console.log(foo.lastIndexOf('a'));
 console.log(foo.lastIndexOf('c'));
+*/
+
+let foo = [1, 2, [3, 4, [5, 6, [7, 8, [9, 10]]]]];
+console.log(foo);
+console.log(foo.flat());
+console.log(foo.flat(4));
