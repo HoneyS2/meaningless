@@ -268,7 +268,12 @@ console.log(foo.lastIndexOf('a'));
 console.log(foo.lastIndexOf('c'));
 */
 
+/*
 let foo = [1, 2, [3, 4, [5, 6, [7, 8, [9, 10]]]]];
 console.log(foo);
 console.log(foo.flat());
 console.log(foo.flat(4));
+*/
+
+let foo = [1, 2, 3, 4, 5];
+console.log(foo.filter(odd => odd % 2 == 1));
