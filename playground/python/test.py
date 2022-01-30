@@ -416,8 +416,8 @@ print("Sum value is: ", sum_val, sep="")
 '''
 
 '''
-input = input("Input numbers: (ex. \"1 2 3 4 5\")\n")
-numbers = input.split(" ")
+input_var = input("Input numbers: (ex. \"1 2 3 4 5\")\n")
+numbers = input_var.split(" ")
 numbers = list(map(int, numbers))
 
 def is_even(n):
