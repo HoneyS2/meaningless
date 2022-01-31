@@ -614,5 +614,13 @@ baz = "Hello, World!"
 print(baz.istitle())
 '''
 
+'''
 foo = ['a', 'b', 'c']
 print(",".join(foo))
+'''
+
+foo = [1, 2, 3, 4, 5]
+bar = [1, 2, 3, 6, 7]
+for index, (first, second) in enumerate(zip(foo, bar)):
+    if first != second:
+        print(index, first, second)
