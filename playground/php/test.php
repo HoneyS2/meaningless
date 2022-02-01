@@ -420,3 +420,19 @@ print_r(array_pad($foo, -5, 0));
 $foo = ['a' => 1, 'b' => 2, 'c' => 3];
 $bar = ['a' => 4, 'e' => 5, 'f' => 6];
 print_r(array_intersect_key($foo, $bar));
+
+# 53. current, prev, next, reset
+$foo = [1, 2, 3, 4, 5];
+print_r(current($foo));
+echo PHP_EOL;
+print_r(next($foo));
+echo PHP_EOL;
+print_r(next($foo));
+echo PHP_EOL;
+print_r(current($foo));
+echo PHP_EOL;
+print_r(prev($foo));
+echo PHP_EOL;
+print_r(current($foo));
+echo PHP_EOL;
+print_r(reset($foo));
