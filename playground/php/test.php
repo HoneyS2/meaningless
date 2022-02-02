@@ -424,6 +424,7 @@ print_r(array_intersect_key($foo, $bar));
 */
 
 # 53. current, prev, next, reset
+/*
 $foo = [1, 2, 3, 4, 5];
 print_r(current($foo));
 echo PHP_EOL;
@@ -438,3 +439,25 @@ echo PHP_EOL;
 print_r(current($foo));
 echo PHP_EOL;
 print_r(reset($foo));
+*/
+
+# 54. range
+foreach (range(0, 10) as $key) {
+    print_r($key);
+    echo PHP_EOL;
+}
+
+foreach (range(0, 10, 2) as $key) {
+    print_r($key);
+    echo PHP_EOL;
+}
+
+foreach (range('a', 'z') as $key) {
+    print_r($key);
+    echo PHP_EOL;
+}
+
+foreach (range('z', 'a') as $key) {
+    print_r($key);
+    echo PHP_EOL;
+}
