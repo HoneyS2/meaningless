@@ -442,6 +442,7 @@ print_r(reset($foo));
 */
 
 # 54. range
+/*
 foreach (range(0, 10) as $key) {
     print_r($key);
     echo PHP_EOL;
@@ -461,3 +462,11 @@ foreach (range('z', 'a') as $key) {
     print_r($key);
     echo PHP_EOL;
 }
+*/
+
+# 55. asort, natsort
+$foo = $bar = ["img12.png", "img10.png", "img2.png", "img1.png"];
+asort($foo);
+natsort($bar);
+print_r($foo);
+print_r($bar);
