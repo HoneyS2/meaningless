@@ -275,5 +275,16 @@ console.log(foo.flat());
 console.log(foo.flat(4));
 */
 
+/*
 let foo = [1, 2, 3, 4, 5];
 console.log(foo.filter(odd => odd % 2 == 1));
+*/
+
+let foo = Array(3);
+let foe = Array(1, 2, 3);
+let bar = Array.of(3);
+let baz = Array.of(1, 2, 3);
+console.log(foo);
+console.log(foe);
+console.log(bar);
+console.log(baz);
