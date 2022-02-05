@@ -280,6 +280,7 @@ let foo = [1, 2, 3, 4, 5];
 console.log(foo.filter(odd => odd % 2 == 1));
 */
 
+/*
 let foo = Array(3);
 let foe = Array(1, 2, 3);
 let bar = Array.of(3);
@@ -288,3 +289,18 @@ console.log(foo);
 console.log(foe);
 console.log(bar);
 console.log(baz);
+*/
+
+//'use strict';
+let foo = new Object();
+foo.a = 1;
+foo.b = 2;
+foo.c = 3;
+console.log(foo);
+console.log(Object.isFrozen(foo));
+Object.freeze(foo);
+foo.a = 4;
+foo.b = 5;
+foo.c = 6;
+console.log(foo);
+console.log(Object.isFrozen(foo));
