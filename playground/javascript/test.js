@@ -291,6 +291,7 @@ console.log(bar);
 console.log(baz);
 */
 
+/*
 //'use strict';
 let foo = new Object();
 foo.a = 1;
@@ -304,3 +305,11 @@ foo.b = 5;
 foo.c = 6;
 console.log(foo);
 console.log(Object.isFrozen(foo));
+*/
+
+let foo = ['Goodbye', 'World'];
+console.log(foo);
+foo.shift();
+console.log(foo);
+foo.unshift('Hello');
+console.log(foo);
