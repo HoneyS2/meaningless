@@ -229,6 +229,15 @@ console.log(foo);
 */
 
 /*
+let foo = ['Goodbye', 'World'];
+console.log(foo);
+foo.shift();
+console.log(foo);
+foo.unshift('Hello');
+console.log(foo);
+*/
+
+/*
 let foo = [1, 2, 3, 4, 5];
 foo.reverse();
 console.log(foo);
@@ -245,6 +254,10 @@ const isOdd = (value) => value % 2 == 1;
 let foo = [1, 3, 5, 7, 10];
 console.log(foo.every(isOdd));
 */
+
+const isEven = (value) => value % 2 == 0;
+let bar = [2, 3, 5, 7, 9];
+console.log(bar.some(isEven));
 
 /*
 let foo = Array(5);
@@ -306,10 +319,3 @@ foo.c = 6;
 console.log(foo);
 console.log(Object.isFrozen(foo));
 */
-
-let foo = ['Goodbye', 'World'];
-console.log(foo);
-foo.shift();
-console.log(foo);
-foo.unshift('Hello');
-console.log(foo);
