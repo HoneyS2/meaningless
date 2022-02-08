@@ -465,8 +465,18 @@ foreach (range('z', 'a') as $key) {
 */
 
 # 55. asort, natsort
+/*
 $foo = $bar = ["img12.png", "img10.png", "img2.png", "img1.png"];
 asort($foo);
 natsort($bar);
 print_r($foo);
 print_r($bar);
+*/
+
+# 56. array_pop, array_shift
+$foo = [1, 2, 3, 4, 5];
+print_r($foo);
+array_pop($foo);
+print_r($foo);
+array_shift($foo);
+print_r($foo);
