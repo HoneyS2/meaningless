@@ -480,3 +480,11 @@ array_pop($foo);
 print_r($foo);
 array_shift($foo);
 print_r($foo);
+
+# 57. array_push, array_unshift
+$foo = [1, 2, 3, 4, 5];
+print_r($foo);
+array_push($foo, 6);
+print_r($foo);
+array_unshift($foo, 0);
+print_r($foo);
