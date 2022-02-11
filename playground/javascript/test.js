@@ -255,9 +255,11 @@ let foo = [1, 3, 5, 7, 10];
 console.log(foo.every(isOdd));
 */
 
+/*
 const isEven = (value) => value % 2 == 0;
 let bar = [2, 3, 5, 7, 9];
 console.log(bar.some(isEven));
+*/
 
 /*
 let foo = Array(5);
@@ -319,3 +321,8 @@ foo.c = 6;
 console.log(foo);
 console.log(Object.isFrozen(foo));
 */
+
+let foo = [1, 2, 3, 4, 5];
+isEven = (element) => element % 2 == 0;
+console.log(foo.find(isEven));
+console.log(foo.findIndex(isEven));
