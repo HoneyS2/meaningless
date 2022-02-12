@@ -322,7 +322,15 @@ console.log(foo);
 console.log(Object.isFrozen(foo));
 */
 
+/*
 let foo = [1, 2, 3, 4, 5];
 isEven = (element) => element % 2 == 0;
 console.log(foo.find(isEven));
 console.log(foo.findIndex(isEven));
+*/
+
+let foo = ['Apple', 'banana', 'cat'];
+console.log(foo.includes('Apple'));
+console.log(foo.includes('apple'));
+console.log(foo.includes('cat', 2));
+console.log(foo.includes('cat', 100));
