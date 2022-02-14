@@ -337,8 +337,15 @@ console.log(foo.includes('cat', 2));
 console.log(foo.includes('cat', 100));
 */
 
+/*
 var foo = ['a', , 'c'];
 var sparseKeys = Object.keys(foo);
 var denseKeys = [...foo.keys()];
 console.log(sparseKeys);
 console.log(denseKeys);
+*/
+
+let foo = {};
+let bar = [];
+console.log(Object.getPrototypeOf(foo));
+console.log(Object.getPrototypeOf(bar));
