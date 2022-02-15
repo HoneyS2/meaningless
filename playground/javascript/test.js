@@ -345,7 +345,18 @@ console.log(sparseKeys);
 console.log(denseKeys);
 */
 
+let foo = {
+    a: 1,
+    b: 'banana',
+    c: true
+};
+let bar = ['a', 'b', 'c'];
+console.log(Object.values(foo));
+console.log(...bar.values());
+
+/*
 let foo = {};
 let bar = [];
 console.log(Object.getPrototypeOf(foo));
 console.log(Object.getPrototypeOf(bar));
+*/
