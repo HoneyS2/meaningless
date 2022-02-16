@@ -345,6 +345,7 @@ console.log(sparseKeys);
 console.log(denseKeys);
 */
 
+/*
 let foo = {
     a: 1,
     b: 'banana',
@@ -353,6 +354,7 @@ let foo = {
 let bar = ['a', 'b', 'c'];
 console.log(Object.values(foo));
 console.log(...bar.values());
+*/
 
 /*
 let foo = {};
@@ -360,3 +362,10 @@ let bar = [];
 console.log(Object.getPrototypeOf(foo));
 console.log(Object.getPrototypeOf(bar));
 */
+
+let foo = 10;
+console.log(foo.toString());
+console.log(foo.toString(2));
+console.log(foo.toString(8));
+console.log(foo.toString(10));
+console.log(foo.toString(16));
