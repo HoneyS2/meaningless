@@ -27,6 +27,7 @@ fun main() {
     println("Result: $str $num")
     */
 
+    /*
     val numbers = listOf("a", "b", "c", "d", "e")
     val listIterator = numbers.listIterator()
 
@@ -41,6 +42,16 @@ fun main() {
     while (listIterator.hasPrevious()) {
         print("Index: ${listIterator.previousIndex()}")
         println(", value: ${listIterator.previous()}")
+    }
+    */
+
+    var foo = 1
+    when (foo) {
+        1 -> print("A")
+        2 -> print("B")
+    	else -> {
+        	print("C")
+    	}
     }
 }
 
