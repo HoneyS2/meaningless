@@ -45,13 +45,19 @@ fun main() {
     }
     */
 
+    /*
     var foo = 1
     when (foo) {
         1 -> print("A")
         2 -> print("B")
-    	else -> {
-        	print("C")
-    	}
+        else -> {
+            print("C")
+        }
+    }
+    */
+
+    for (i in 1..10){
+        println(i)
     }
 }
 
