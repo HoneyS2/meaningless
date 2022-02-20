@@ -56,8 +56,15 @@ fun main() {
     }
     */
 
-    for (i in 1..10){
+    /*
+    for (i in 1..10) {
         println(i)
+    }
+    */
+
+    var foo = arrayOf(1, 2, 3)
+    for (item in foo) {
+        println(item)
     }
 }
 
