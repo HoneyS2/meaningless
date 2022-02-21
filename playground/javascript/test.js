@@ -363,9 +363,18 @@ console.log(Object.getPrototypeOf(foo));
 console.log(Object.getPrototypeOf(bar));
 */
 
+/*
 let foo = 10;
 console.log(foo.toString());
 console.log(foo.toString(2));
 console.log(foo.toString(8));
 console.log(foo.toString(10));
 console.log(foo.toString(16));
+*/
+
+let foo = 1;
+let bar = 1;
+console.log(Object.is(foo, bar));
+let foe = {a: 1};
+let baz = {a: 1};
+console.log(Object.is(foe, baz));
