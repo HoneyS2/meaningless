@@ -372,9 +372,16 @@ console.log(foo.toString(10));
 console.log(foo.toString(16));
 */
 
+/*
 let foo = 1;
 let bar = 1;
 console.log(Object.is(foo, bar));
 let foe = {a: 1};
 let baz = {a: 1};
 console.log(Object.is(foe, baz));
+*/
+
+let foo = [];
+let bar = {};
+console.log(Array.isArray(foo));
+console.log(Array.isArray(bar));
