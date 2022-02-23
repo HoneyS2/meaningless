@@ -1,5 +1,9 @@
 //import java.util.Scanner
 
+data class Car(var name: String, private var engine: String, var speed: Int) {
+    override fun toString(): String = "$name($engine): $speed"+"km/h"
+}
+
 fun main() {
     //println("Hello, world!")
     
@@ -62,10 +66,20 @@ fun main() {
     }
     */
 
+    /*
     var foo = arrayOf(1, 2, 3)
     for (item in foo) {
         println(item)
     }
+    */
+
+    var arr = mutableListOf<Car>()
+    arr.add(Car("foo", "V12", 355))
+    arr.add(Car("bar", "W16", 440))
+
+    var arr2 = arr.associateBy { it.name }
+    arr2.forEach { println(it) }
+    arr2.forEach { println(it.value.speed) }
 }
 
 /*
