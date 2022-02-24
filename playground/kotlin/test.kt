@@ -1,8 +1,10 @@
 //import java.util.Scanner
 
+/*
 data class Car(var name: String, private var engine: String, var speed: Int) {
     override fun toString(): String = "$name($engine): $speed"+"km/h"
 }
+*/
 
 fun main() {
     //println("Hello, world!")
@@ -73,6 +75,7 @@ fun main() {
     }
     */
 
+    /*
     var arr = mutableListOf<Car>()
     arr.add(Car("foo", "V12", 355))
     arr.add(Car("bar", "W16", 440))
@@ -80,6 +83,16 @@ fun main() {
     var arr2 = arr.associateBy { it.name }
     arr2.forEach { println(it) }
     arr2.forEach { println(it.value.speed) }
+    */
+
+    var foo = mutableMapOf<Any, Any?>()
+    println(foo.isEmpty())
+
+    var bar = mutableMapOf(1 to 'a', 2 to 'b', 3 to 'c')
+    for ((key, value) in bar) {
+        println("$key - $value")
+    }
+    bar.forEach { (key, value) -> println("$key : $value") }
 }
 
 /*
