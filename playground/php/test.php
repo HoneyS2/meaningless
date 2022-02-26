@@ -499,3 +499,5 @@ print_r($foo);
 $foo = [1, 2, 3, 4, 5];
 print_r($foo);
 print_r(array_slice($foo, 0, 3));
+print_r(array_slice($foo, 2, 3));
+print_r(array_slice($foo, 2, 3, true));
