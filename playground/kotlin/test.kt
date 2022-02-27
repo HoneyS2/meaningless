@@ -88,7 +88,7 @@ fun main() {
     var foo = mutableMapOf<Any, Any?>()
     println(foo.isEmpty())
 
-    var bar = mutableMapOf(1 to 'a', 2 to 'b', 3 to 'c')
+    var bar = mutableMapOf(1 to "apple", 2 to 'b', 3 to 'c')
     for ((key, value) in bar) {
         println("$key - $value")
     }
