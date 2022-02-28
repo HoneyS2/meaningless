@@ -381,7 +381,16 @@ let baz = {a: 1};
 console.log(Object.is(foe, baz));
 */
 
+/*
 let foo = [];
 let bar = {};
 console.log(Array.isArray(foo));
 console.log(Array.isArray(bar));
+*/
+
+let foo = ['a', 'b', 'c'];
+console.log(foo);
+foo.splice(3, 0, 'd');
+console.log(foo);
+foo.splice(1, 2);
+console.log(foo);
