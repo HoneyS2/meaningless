@@ -397,6 +397,11 @@ foo.splice(1, 2);
 console.log(foo);
 */
 
+/*
 let foo = ['a', 'b', 'c', 'd', 'e'];
 console.log(foo);
 console.log(foo.slice(0, 3));
+*/
+
+console.log(Array.from('foo'));
+console.log(Array.from([1, 2, 3, 4, 5], x => x*2));
