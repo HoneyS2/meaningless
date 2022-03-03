@@ -214,6 +214,14 @@ console.log(yellow);
 console.log(green);
 */
 
+let foo = {
+    a: 'apple',
+    b: 'banana',
+    c: 'cat'
+}
+let {a, b, c} = foo;
+console.log(a, b, c);
+
 /*
 let foo = 'hello';
 let bar = foo ?? 'world';
@@ -403,5 +411,7 @@ console.log(foo);
 console.log(foo.slice(0, 3));
 */
 
+/*
 console.log(Array.from('foo'));
 console.log(Array.from([1, 2, 3, 4, 5], x => x*2));
+*/
