@@ -220,7 +220,9 @@ let foo = {
     c: 'cat'
 }
 let {a, b, c} = foo;
+let {a: d, b: e, c: f} = foo;
 console.log(a, b, c);
+console.log(d, e, f);
 
 /*
 let foo = 'hello';
