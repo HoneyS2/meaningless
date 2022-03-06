@@ -214,6 +214,7 @@ console.log(yellow);
 console.log(green);
 */
 
+/*
 let foo = {
     a: 'apple',
     b: 'banana',
@@ -223,6 +224,7 @@ let {a, b, c} = foo;
 let {a: d, b: e, c: f} = foo;
 console.log(a, b, c);
 console.log(d, e, f);
+*/
 
 /*
 let foo = 'hello';
@@ -417,3 +419,29 @@ console.log(foo.slice(0, 3));
 console.log(Array.from('foo'));
 console.log(Array.from([1, 2, 3, 4, 5], x => x*2));
 */
+
+function getRandomIntInclusive(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+let randNum = getRandomIntInclusive(0, 1);
+let myFirstPromise = new Promise((resolve, reject) => {
+    if (randNum > 0) {
+        setTimeout(function() {
+            resolve("A");
+        }, 250);
+    } else {
+        setTimeout(function() {
+            reject("B");
+        }, 250);
+    }
+})
+
+myFirstPromise.then((successMessage) => {
+    console.log(successMessage);
+})
+.catch((errorMessage) => {
+    console.log(errorMessage);
+});
