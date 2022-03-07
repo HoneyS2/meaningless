@@ -505,7 +505,17 @@ print_r(array_slice($foo, 2, 3, true));
 */
 
 # 59. gettype
+/*
 $foo = [1, 1., NULL, new stdClass, 'foo', []];
 foreach ($foo as $data) {
     print_r(gettype($data).PHP_EOL);
 }
+*/
+
+# 60. function_exists
+if (!function_exists('foo')) {
+    function foo() {
+        print_r('bar');
+    }
+}
+print_r(foo());
