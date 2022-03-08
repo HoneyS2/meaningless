@@ -515,7 +515,7 @@ foreach ($foo as $data) {
 # 60. function_exists
 if (!function_exists('foo')) {
     function foo() {
-        print_r('bar');
+        return 'bar';
     }
 }
 print_r(foo());
