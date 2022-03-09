@@ -334,6 +334,19 @@ console.log(foo);
 console.log(Object.isFrozen(foo));
 */
 
+let foo = new Object();
+foo.a = 1;
+foo.b = 2;
+foo.c = 3;
+console.log(foo);
+console.log(Object.isSealed(foo));
+Object.seal(foo);
+foo.a = 4;
+foo.b = 5;
+foo.c = 6;
+console.log(foo);
+console.log(Object.isSealed(foo));
+
 /*
 let foo = [1, 2, 3, 4, 5];
 isEven = (element) => element % 2 == 0;
@@ -420,6 +433,7 @@ console.log(Array.from('foo'));
 console.log(Array.from([1, 2, 3, 4, 5], x => x*2));
 */
 
+/*
 function getRandomIntInclusive(min, max) {
   min = Math.ceil(min);
   max = Math.floor(max);
@@ -445,3 +459,4 @@ myFirstPromise.then((successMessage) => {
 .catch((errorMessage) => {
     console.log(errorMessage);
 });
+*/
