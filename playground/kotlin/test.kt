@@ -87,12 +87,18 @@ fun main() {
 
     var foo = mutableMapOf<Any, Any?>()
     println(foo.isEmpty())
-
-    var bar = mutableMapOf(1 to "apple", 2 to 'b', 3 to 'c')
-    for ((key, value) in bar) {
+    foo[1] = "apple"
+    foo.put(2, 'b')
+    foo.putAll(mapOf(3 to 3, 4 to true))
+    for ((key, value) in foo) {
         println("$key - $value")
     }
+    println(foo.isEmpty())
+
+    /*
+    var bar = mutableMapOf(1 to "apple", 2 to 'b', 3 to 'c')
     bar.forEach { (key, value) -> println("$key : $value") }
+    */
 }
 
 /*
