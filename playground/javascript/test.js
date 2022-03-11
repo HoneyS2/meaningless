@@ -334,6 +334,7 @@ console.log(foo);
 console.log(Object.isFrozen(foo));
 */
 
+/*
 let foo = new Object();
 foo.a = 1;
 foo.b = 2;
@@ -346,6 +347,7 @@ foo.b = 5;
 foo.c = 6;
 console.log(foo);
 console.log(Object.isSealed(foo));
+*/
 
 /*
 let foo = [1, 2, 3, 4, 5];
@@ -460,3 +462,7 @@ myFirstPromise.then((successMessage) => {
     console.log(errorMessage);
 });
 */
+
+let foo = [1, 30, 4, 21, 100000];
+foo.sort();
+console.log(foo);
