@@ -466,3 +466,7 @@ myFirstPromise.then((successMessage) => {
 let foo = [1, 30, 4, 21, 100000];
 foo.sort();
 console.log(foo);
+foo.sort(function compareNumbers(a, b) {
+  return a - b;
+});
+console.log(foo);
