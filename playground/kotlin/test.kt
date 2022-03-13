@@ -94,6 +94,13 @@ fun main() {
         println("$key - $value")
     }
     println(foo.isEmpty())
+    foo.remove(2, 'b')
+    foo.remove(4)
+    for ((key, value) in foo) {
+        println("$key - $value")
+    }
+    foo.clear()
+    println(foo.isEmpty())
 
     /*
     var bar = mutableMapOf(1 to "apple", 2 to 'b', 3 to 'c')
