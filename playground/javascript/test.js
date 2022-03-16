@@ -480,3 +480,6 @@ console.log(foo);
 let foo = [1, 2, 3, 4];
 console.log(foo.reduce((prevVal, curVal) => prevVal + curVal));
 console.log(foo.reduce((prevVal, curVal) => prevVal + curVal, 5));
+
+let bar = [[1, 2], [3, 4], [5, 6]];
+console.log(bar.reduce((prevVal, curVal) => prevVal.concat(curVal), []));
