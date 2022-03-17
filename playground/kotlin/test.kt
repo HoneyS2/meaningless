@@ -75,6 +75,12 @@ fun main() {
     }
     */
 
+    var foo: Array<Any> = arrayOf("apple", 'b', 3, true)
+    println(foo.contentToString())
+    foo.forEach {
+        println("${it::class.simpleName}")
+    }
+
     /*
     var arr = mutableListOf<Car>()
     arr.add(Car("foo", "V12", 355))
@@ -85,6 +91,7 @@ fun main() {
     arr2.forEach { println(it.value.speed) }
     */
 
+    /*
     var foo = mutableMapOf<Any, Any?>()
     println(foo.isEmpty())
     foo[1] = "apple"
@@ -101,6 +108,7 @@ fun main() {
     }
     foo.clear()
     println(foo.isEmpty())
+    */
 
     /*
     var bar = mutableMapOf(1 to "apple", 2 to 'b', 3 to 'c')
