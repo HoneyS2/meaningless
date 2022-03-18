@@ -477,9 +477,24 @@ foo.sort(function(a, b) {
 console.log(foo);
 */
 
+/*
 let foo = [1, 2, 3, 4];
 console.log(foo.reduce((prevVal, curVal) => prevVal + curVal));
 console.log(foo.reduce((prevVal, curVal) => prevVal + curVal, 5));
 
 let bar = [[1, 2], [3, 4], [5, 6]];
 console.log(bar.reduce((prevVal, curVal) => prevVal.concat(curVal), []));
+*/
+
+let names = ['Foo', 'Bar', 'Foe', 'Baz', 'Foo'];
+
+let countedNames = names.reduce(function (allNames, name) {
+  if (name in allNames) {
+    allNames[name]++;
+  }
+  else {
+    allNames[name] = 1;
+  }
+  return allNames;
+}, {});
+console.log(countedNames);
