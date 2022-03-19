@@ -513,9 +513,15 @@ foreach ($foo as $data) {
 */
 
 # 60. function_exists
+/*
 if (!function_exists('foo')) {
     function foo() {
         return 'bar';
     }
 }
 print_r(foo());
+*/
+
+# 61. array_count_values
+$arr = ['foo', 'bar', 'foe', 'baz', 'foo'];
+print_r(array_count_values($arr));
