@@ -629,3 +629,5 @@ for index, (first, second) in enumerate(zip(foo, bar)):
 
 foo = "10"
 print(foo.zfill(4))
+print(foo.rjust(4, '0'))
+print(foo.rjust(4, '_'))
