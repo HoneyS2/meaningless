@@ -631,3 +631,5 @@ foo = "10"
 print(foo.zfill(4))
 print(foo.rjust(4, '0'))
 print(foo.rjust(4, '_'))
+print(foo.ljust(4, '0'))
+print(foo.ljust(4, '_'))
