@@ -627,9 +627,15 @@ for index, (first, second) in enumerate(zip(foo, bar)):
         print(index, first, second)
 '''
 
+'''
 foo = "10"
 print(foo.zfill(4))
 print(foo.rjust(4, '0'))
 print(foo.rjust(4, '_'))
 print(foo.ljust(4, '0'))
 print(foo.ljust(4, '_'))
+'''
+
+foo = "Hello, world!"
+print(foo.endswith("!"))
+print(foo.endswith("."))
