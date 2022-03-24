@@ -636,6 +636,12 @@ print(foo.ljust(4, '0'))
 print(foo.ljust(4, '_'))
 '''
 
+'''
 foo = "Hello, world!"
 print(foo.endswith("!"))
 print(foo.endswith("."))
+'''
+
+foo = "    Hello, world!    "
+print("0", foo, "0", sep="")
+print("0", foo.strip(), "0", sep="")
