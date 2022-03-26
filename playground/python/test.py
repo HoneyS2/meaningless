@@ -614,6 +614,9 @@ baz = "Hello, World!"
 print(baz.istitle())
 '''
 
+foo = "Hello, world!"
+print(foo.title())
+
 '''
 foo = ['a', 'b', 'c']
 print(",".join(foo))
@@ -642,8 +645,10 @@ print(foo.endswith("!"))
 print(foo.endswith("."))
 '''
 
+'''
 foo = "    Hello, world!    "
 print("0", foo, "0", sep="")
 print("0", foo.strip(), "0", sep="")
 print("0", foo.lstrip(), "0", sep="")
 print("0", foo.rstrip(), "0", sep="")
+'''
