@@ -614,9 +614,11 @@ baz = "Hello, World!"
 print(baz.istitle())
 '''
 
+'''
 foo = "hello, world!"
 print(foo.title())
 print(foo.capitalize())
+'''
 
 '''
 foo = ['a', 'b', 'c']
@@ -658,3 +660,6 @@ print("0", foo.rstrip(), "0", sep="")
 foo = "Hello, world!"
 print(foo.partition(','))
 '''
+
+foo = "Hello, world!\nGoodbye, world!"
+print(foo.splitlines())
