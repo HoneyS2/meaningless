@@ -523,5 +523,13 @@ print_r(foo());
 */
 
 # 61. array_count_values
+/*
 $arr = ['foo', 'bar', 'foe', 'baz', 'foo'];
 print_r(array_count_values($arr));
+*/
+
+# 62. array_search
+$foo = ['a', 'b', 'c', 'd'];
+var_dump(array_search('a', $foo));
+var_dump(array_search('b', $foo));
+var_dump(array_search('e', $foo));
