@@ -529,7 +529,19 @@ print_r(array_count_values($arr));
 */
 
 # 62. array_search
+/*
 $foo = ['a', 'b', 'c', 'd'];
 var_dump(array_search('a', $foo));
 var_dump(array_search('b', $foo));
 var_dump(array_search('e', $foo));
+*/
+
+# 63. array_is_list
+$foo = [1, 2, 'c'];
+$bar = [0 => 'a', 2, 3];
+$foe = [1 => 'a', 0 => 2, 3];
+$baz = [];
+var_dump(array_is_list($foo));
+var_dump(array_is_list($bar));
+var_dump(array_is_list($foe));
+var_dump(array_is_list($baz));
