@@ -661,5 +661,12 @@ foo = "Hello, world!"
 print(foo.partition(','))
 '''
 
+'''
 foo = "Hello, world!\nGoodbye, world!"
 print(foo.splitlines())
+'''
+
+fools = memoryview(b'April')
+print(fools[0])
+print(fools[1:5])
+print(bytes(fools[1:5]))
