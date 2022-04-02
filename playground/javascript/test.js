@@ -486,6 +486,7 @@ let bar = [[1, 2], [3, 4], [5, 6]];
 console.log(bar.reduce((prevVal, curVal) => prevVal.concat(curVal), []));
 */
 
+/*
 let names = ['Foo', 'Bar', 'Foe', 'Baz', 'Foo'];
 
 let countedNames = names.reduce(function (allNames, name) {
@@ -498,3 +499,7 @@ let countedNames = names.reduce(function (allNames, name) {
   return allNames;
 }, {});
 console.log(countedNames);
+*/
+
+let foo = new Uint32Array(10);
+console.log(window.crypto.getRandomValues(foo));
