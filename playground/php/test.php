@@ -550,5 +550,6 @@ var_dump(array_is_list($baz));
 
 # 64. array_splice
 $foo = ["red", "green", "blue", "yellow"];
-array_splice($foo, 2);
+#array_splice($foo, 2);
+array_splice($foo, 2, 1, 'azure');
 print_r($foo);
