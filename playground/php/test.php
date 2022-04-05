@@ -549,7 +549,15 @@ var_dump(array_is_list($baz));
 */
 
 # 64. array_splice
+/*
 $foo = ["red", "green", "blue", "yellow"];
 #array_splice($foo, 2);
 array_splice($foo, 2, 1, 'azure');
 print_r($foo);
+*/
+
+# 65. str_pad, sprintf
+$foo = 7;
+print_r(str_pad($foo, 3, '0', STR_PAD_LEFT));
+echo PHP_EOL;
+print_r(sprintf("%03d", $foo));
