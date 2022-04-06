@@ -501,5 +501,13 @@ let countedNames = names.reduce(function (allNames, name) {
 console.log(countedNames);
 */
 
-let foo = new Uint32Array(10);
-console.log(window.crypto.getRandomValues(foo));
+let crypto;
+try {
+  crypto = require('crypto');
+  let foo = crypto.randomBytes(256);
+  console.log(foo);
+  console.log(foo.toString('hex'));
+} catch (err) {
+  let foo = new Uint32Array(10);
+  console.log(window.crypto.getRandomValues(foo));
+}
