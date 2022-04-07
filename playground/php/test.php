@@ -557,7 +557,13 @@ print_r($foo);
 */
 
 # 65. str_pad, sprintf
+/*
 $foo = 7;
 print_r(str_pad($foo, 3, '0', STR_PAD_LEFT));
 echo PHP_EOL;
 print_r(sprintf("%03d", $foo));
+*/
+
+# 66. number_format
+$foo = 123456789;
+print_r(number_format($foo));
