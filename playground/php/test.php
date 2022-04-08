@@ -565,5 +565,13 @@ print_r(sprintf("%03d", $foo));
 */
 
 # 66. number_format
+/*
 $foo = 123456789;
 print_r(number_format($foo));
+*/
+
+# 67. substr_count
+$foo = 'Hello, world!';
+print_r(substr_count($foo, 'Hello'));
+echo PHP_EOL;
+print_r(substr_count($foo, 'hello'));
