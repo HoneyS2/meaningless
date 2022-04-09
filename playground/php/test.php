@@ -575,3 +575,5 @@ $foo = 'Hello, world!';
 print_r(substr_count($foo, 'Hello'));
 echo PHP_EOL;
 print_r(substr_count($foo, 'hello'));
+echo PHP_EOL;
+print_r(substr_count(strtoupper($foo), strtoupper('hello')));
