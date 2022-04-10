@@ -501,6 +501,7 @@ let countedNames = names.reduce(function (allNames, name) {
 console.log(countedNames);
 */
 
+/*
 let crypto;
 try {
   crypto = require('crypto');
@@ -511,3 +512,9 @@ try {
   let foo = new Uint32Array(10);
   console.log(window.crypto.getRandomValues(foo));
 }
+*/
+
+let foo = '   Hello, world!   ';
+console.log(foo.trim());
+console.log(foo.trimEnd());
+console.log(foo.trimStart());
