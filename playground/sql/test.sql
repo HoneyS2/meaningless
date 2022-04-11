@@ -45,6 +45,10 @@ UPDATE `table` SET `COLUMN` = 'foo' WHERE id = 1;
 # DELETE
 DELETE FROM `table` WHERE id = 1;
 
+# CURDATE
+SELECT CURDATE();
+SELECT * FROM `table` WHERE DATE_FORMAT(`created_at`, "%Y-%m-%d") = CURDATE();
+
 # EXPLAIN QUERY
 EXPLAIN SELECT * FROM `table`;
 
