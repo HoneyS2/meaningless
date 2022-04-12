@@ -49,6 +49,9 @@ DELETE FROM `table` WHERE id = 1;
 SELECT CURDATE();
 SELECT * FROM `table` WHERE DATE_FORMAT(`created_at`, "%Y-%m-%d") = CURDATE();
 
+# SUM
+SELECT SUM(`FIELD`) FROM `table`;
+
 # EXPLAIN QUERY
 EXPLAIN SELECT * FROM `table`;
 
