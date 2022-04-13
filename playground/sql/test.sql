@@ -50,7 +50,7 @@ SELECT CURDATE();
 SELECT * FROM `table` WHERE DATE_FORMAT(`created_at`, "%Y-%m-%d") = CURDATE();
 
 # SUM
-SELECT SUM(`FIELD`) FROM `table`;
+SELECT SUM(`COLUMN`) FROM `table`;
 
 # EXPLAIN QUERY
 EXPLAIN SELECT * FROM `table`;
