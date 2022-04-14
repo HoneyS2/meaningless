@@ -514,7 +514,13 @@ try {
 }
 */
 
+/*
 let foo = '   Hello, world!   ';
 console.log(foo.trim());
 console.log(foo.trimEnd());
 console.log(foo.trimStart());
+*/
+
+let foo = "a,b,c,d,e";
+console.log(foo.split(','));
+console.log(foo.split(',').length-1);
