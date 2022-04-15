@@ -521,6 +521,13 @@ console.log(foo.trimEnd());
 console.log(foo.trimStart());
 */
 
+/*
 let foo = "a,b,c,d,e";
 console.log(foo.split(','));
 console.log(foo.split(',').length-1);
+*/
+
+let foo = 'abcdefg';
+console.log(foo.substring(0, 3));
+console.log(foo.substring(3, 6));
+console.log(foo.substring(6, foo.length));
