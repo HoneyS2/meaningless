@@ -541,9 +541,19 @@ console.log(foo.substring(3, 6));
 console.log(foo.substring(6, foo.length));
 */
 
+/*
 let foo = ['a', 'b', 'c'];
 let bar = foo.entries();
 
 for (let [index, element] of bar) {
     console.log(index, element);
 }
+*/
+
+let foo = "abcde";
+console.log(foo.charAt());
+console.log(foo.charAt(4));
+console.log(foo.charAt(999));
+console.log(foo[0]);
+console.log(foo[4]);
+console.log(foo[999]);
