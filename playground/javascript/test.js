@@ -550,6 +550,7 @@ for (let [index, element] of bar) {
 }
 */
 
+/*
 let foo = "abcde";
 console.log(foo.charAt());
 console.log(foo.charAt(4));
@@ -557,3 +558,8 @@ console.log(foo.charAt(999));
 console.log(foo[0]);
 console.log(foo[4]);
 console.log(foo[999]);
+*/
+
+let foo = "7";
+console.log(foo.padStart(3, '0'));
+console.log(foo.padEnd(3, '7'));
