@@ -560,6 +560,17 @@ console.log(foo[4]);
 console.log(foo[999]);
 */
 
+/*
 let foo = "7";
 console.log(foo.padStart(3, '0'));
 console.log(foo.padEnd(3, '7'));
+*/
+
+let foo = ['a', 'b', 'c', 'd', 'e'];
+console.log(foo.length);
+let bar = {
+    'a': 1,
+    'b': 2,
+    'c': 3,
+};
+console.log(Object.keys(bar).length);
