@@ -566,6 +566,7 @@ console.log(foo.padStart(3, '0'));
 console.log(foo.padEnd(3, '7'));
 */
 
+/*
 let foo = ['a', 'b', 'c', 'd', 'e'];
 console.log(foo.length);
 let bar = {
@@ -574,3 +575,8 @@ let bar = {
     'c': 3,
 };
 console.log(Object.keys(bar).length);
+*/
+
+const regex = new RegExp('Hello*');
+console.log(regex.test('Hello, world!'));
+console.log(regex.test('Goodbye, world~'));
