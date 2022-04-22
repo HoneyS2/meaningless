@@ -577,6 +577,7 @@ let bar = {
 console.log(Object.keys(bar).length);
 */
 
-const regex = new RegExp('Hello*');
+const regex = new RegExp('Hello*', 'i');
+console.log(regex.test('hellO, world!'));
 console.log(regex.test('Hello, world!'));
 console.log(regex.test('Goodbye, world~'));
