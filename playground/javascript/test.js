@@ -281,11 +281,13 @@ foo.fill('baz', 1, 4);
 console.log(foo);
 */
 
-/*
 let foo = new Date();
 console.log(foo);
+console.log(foo.toString());
+console.log(foo.toDateString());
+console.log(foo.toUTCString());
 console.log(foo.toLocaleString());
-*/
+console.log(foo.toISOString());
 
 /*
 let foo = ['a', 'b', 'c', 'a', 'b', 'c'];
@@ -577,7 +579,9 @@ let bar = {
 console.log(Object.keys(bar).length);
 */
 
+/*
 const regex = new RegExp('Hello*', 'i');
 console.log(regex.test('hellO, world!'));
 console.log(regex.test('Hello, world!'));
 console.log(regex.test('Goodbye, world~'));
+*/
