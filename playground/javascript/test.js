@@ -281,6 +281,7 @@ foo.fill('baz', 1, 4);
 console.log(foo);
 */
 
+/*
 let foo = new Date();
 console.log(foo);
 console.log(foo.toString());
@@ -288,6 +289,7 @@ console.log(foo.toDateString());
 console.log(foo.toUTCString());
 console.log(foo.toLocaleString());
 console.log(foo.toISOString());
+*/
 
 /*
 let foo = ['a', 'b', 'c', 'a', 'b', 'c'];
@@ -365,6 +367,10 @@ console.log(foo.includes('apple'));
 console.log(foo.includes('cat', 2));
 console.log(foo.includes('cat', 100));
 */
+
+let foo = 'Hello, world!';
+console.log(foo.startsWith('Hello'));
+console.log(foo.endsWith('!'));
 
 /*
 var foo = ['a', , 'c'];
