@@ -642,11 +642,11 @@ print(foo.ljust(4, '0'))
 print(foo.ljust(4, '_'))
 '''
 
-'''
 foo = "Hello, world!"
+print(foo.startswith("H"))
+print(foo.startswith("h"))
 print(foo.endswith("!"))
 print(foo.endswith("."))
-'''
 
 '''
 foo = "    Hello, world!    "
@@ -666,7 +666,9 @@ foo = "Hello, world!\nGoodbye, world!"
 print(foo.splitlines())
 '''
 
+'''
 fools = memoryview(b'April')
 print(fools[0])
 print(fools[1:5])
 print(bytes(fools[1:5]))
+'''
