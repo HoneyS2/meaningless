@@ -368,9 +368,11 @@ console.log(foo.includes('cat', 2));
 console.log(foo.includes('cat', 100));
 */
 
+/*
 let foo = 'Hello, world!';
 console.log(foo.startsWith('Hello'));
 console.log(foo.endsWith('!'));
+*/
 
 /*
 var foo = ['a', , 'c'];
@@ -591,3 +593,6 @@ console.log(regex.test('hellO, world!'));
 console.log(regex.test('Hello, world!'));
 console.log(regex.test('Goodbye, world~'));
 */
+
+const regex = /[A-Z]/g;
+console.log('Hello, world!'.match(regex));
