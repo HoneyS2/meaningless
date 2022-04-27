@@ -560,6 +560,11 @@ for (let [index, element] of bar) {
 }
 */
 
+let foo = {'a': 'apple', 'b': 2, 'c': true};
+for (const prop in foo) {
+    console.log(`foo.${prop}: ${foo[prop]}`);
+}
+
 /*
 let foo = "abcde";
 console.log(foo.charAt());
@@ -594,5 +599,7 @@ console.log(regex.test('Hello, world!'));
 console.log(regex.test('Goodbye, world~'));
 */
 
+/*
 const regex = /[A-Z]/g;
 console.log('Hello, world!'.match(regex));
+*/
