@@ -608,3 +608,4 @@ console.log('Hello, world!'.match(regex));
 
 console.log(Number.MAX_VALUE);
 console.log(Number.MIN_VALUE);
+console.log(Number.isNaN(NaN));
