@@ -614,3 +614,5 @@ console.log(Number.isNaN(NaN));
 
 console.log(parseInt('3.14'));
 console.log(parseInt('ff', 16));
+console.log(parseFloat('3.14'));
+console.log(parseFloat('foo'));
