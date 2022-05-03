@@ -606,10 +606,15 @@ const regex = /[A-Z]/g;
 console.log('Hello, world!'.match(regex));
 */
 
+/*
 console.log(Number.MAX_VALUE);
 console.log(Number.MIN_VALUE);
 console.log(Number.isNaN(NaN));
 console.log(Number.isFinite(Infinity));
+*/
+
+console.log(Number.isInteger(1));
+console.log(Number.isInteger('1'));
 
 /*
 console.log(parseInt('3.14'));
