@@ -615,6 +615,8 @@ console.log(Number.isFinite(Infinity));
 
 console.log(Number.isInteger(1));
 console.log(Number.isInteger('1'));
+console.log(Number.isSafeInteger(9007199254740991));
+console.log(Number.isSafeInteger(-9007199254740991));
 
 /*
 console.log(parseInt('3.14'));
