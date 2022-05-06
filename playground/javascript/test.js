@@ -613,10 +613,16 @@ console.log(Number.isNaN(NaN));
 console.log(Number.isFinite(Infinity));
 */
 
+/*
 console.log(Number.isInteger(1));
 console.log(Number.isInteger('1'));
 console.log(Number.isSafeInteger(Number.MAX_SAFE_INTEGER));
 console.log(Number.isSafeInteger(Number.MIN_SAFE_INTEGER));
+*/
+
+let foo = Number.NEGATIVE_INFINITY;
+let bar = foo * foo;
+console.log(bar === Number.POSITIVE_INFINITY);
 
 /*
 console.log(parseInt('3.14'));
