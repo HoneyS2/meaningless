@@ -620,9 +620,11 @@ console.log(Number.isSafeInteger(Number.MAX_SAFE_INTEGER));
 console.log(Number.isSafeInteger(Number.MIN_SAFE_INTEGER));
 */
 
+/*
 let foo = Number.NEGATIVE_INFINITY;
 let bar = foo * foo;
 console.log(bar === Number.POSITIVE_INFINITY);
+*/
 
 /*
 console.log(parseInt('3.14'));
@@ -630,3 +632,7 @@ console.log(parseInt('ff', 16));
 console.log(parseFloat('3.14'));
 console.log(parseFloat('foo'));
 */
+
+let foo = ";,/?:@&=+$#";
+console.log(encodeURI(foo));
+console.log(encodeURIComponent(foo));
