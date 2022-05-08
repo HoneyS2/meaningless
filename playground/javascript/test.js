@@ -281,7 +281,6 @@ foo.fill('baz', 1, 4);
 console.log(foo);
 */
 
-/*
 let foo = new Date();
 console.log(foo);
 console.log(foo.toString());
@@ -289,7 +288,9 @@ console.log(foo.toDateString());
 console.log(foo.toUTCString());
 console.log(foo.toLocaleString());
 console.log(foo.toISOString());
-*/
+console.log(foo.getDate());
+console.log(foo.getMonth());
+console.log(foo.getFullYear());
 
 /*
 let foo = ['a', 'b', 'c', 'a', 'b', 'c'];
@@ -633,6 +634,8 @@ console.log(parseFloat('3.14'));
 console.log(parseFloat('foo'));
 */
 
+/*
 let foo = ";,/?:@&=+$#";
 console.log(encodeURI(foo));
 console.log(encodeURIComponent(foo));
+*/
