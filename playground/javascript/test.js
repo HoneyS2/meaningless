@@ -291,6 +291,9 @@ console.log(foo.toISOString());
 console.log(foo.getDate());
 console.log(foo.getMonth());
 console.log(foo.getFullYear());
+console.log(foo.getHours());
+console.log(foo.getMinutes());
+console.log(foo.getSeconds());
 
 /*
 let foo = ['a', 'b', 'c', 'a', 'b', 'c'];
