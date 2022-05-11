@@ -295,6 +295,7 @@ console.log(foo.getHours());
 console.log(foo.getMinutes());
 console.log(foo.getSeconds());
 console.log(foo.getMilliseconds());
+console.log(foo.getTime());
 
 /*
 let foo = ['a', 'b', 'c', 'a', 'b', 'c'];
