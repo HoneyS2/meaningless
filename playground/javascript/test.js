@@ -281,6 +281,7 @@ foo.fill('baz', 1, 4);
 console.log(foo);
 */
 
+/*
 let foo = new Date();
 console.log(foo);
 console.log(foo.toString());
@@ -296,6 +297,9 @@ console.log(foo.getMinutes());
 console.log(foo.getSeconds());
 console.log(foo.getMilliseconds());
 console.log(foo.getTime());
+*/
+
+console.log(Date.now());
 
 /*
 let foo = ['a', 'b', 'c', 'a', 'b', 'c'];
