@@ -299,6 +299,7 @@ console.log(foo.getMilliseconds());
 console.log(foo.getTime());
 */
 
+/*
 //console.log(Date.now());
 start = Date.now();
 for (var i = 0; i < 10000; i++) {
@@ -307,6 +308,14 @@ for (var i = 0; i < 10000; i++) {
 end = Date.now();
 
 console.log('Operation took ' + (end - start) + ' msec');
+*/
+
+let foo = new Date('2022-01-02 03:04:05.006');
+let bar = new Date(2022, 0, 2, 3, 4, 5, 6);
+let foe = new Date(Date.now());
+console.log(foo);
+console.log(bar);
+console.log(foe);
 
 /*
 let foo = ['a', 'b', 'c', 'a', 'b', 'c'];
