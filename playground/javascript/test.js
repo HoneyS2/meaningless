@@ -310,12 +310,14 @@ end = Date.now();
 console.log('Operation took ' + (end - start) + ' msec');
 */
 
+/*
 let foo = new Date('2022-01-02 03:04:05.006');
 let bar = new Date(2022, 0, 2, 3, 4, 5, 6);
 let foe = new Date(Date.now());
 console.log(foo);
 console.log(bar);
 console.log(foe);
+*/
 
 /*
 let foo = ['a', 'b', 'c', 'a', 'b', 'c'];
@@ -619,6 +621,9 @@ let bar = {
 };
 console.log(Object.keys(bar).length);
 */
+
+function foo(a, b){};
+console.log(foo.length);
 
 /*
 const regex = new RegExp('Hello*', 'i');
