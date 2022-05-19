@@ -18,7 +18,13 @@ console.log(foo);
 console.log(bar);
 */
 
+/*
 function hello(name: string): string {
     return `Hello, ${name}!`;
 }
 console.log(hello('world'));
+*/
+
+type PositiveOddNumbersUnderTen = 1 | 3 | 5 | 7 | 9;
+let foo: PositiveOddNumbersUnderTen = 1;
+console.log(foo);
