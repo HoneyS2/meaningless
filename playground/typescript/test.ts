@@ -25,6 +25,14 @@ function hello(name: string): string {
 console.log(hello('world'));
 */
 
+/*
 type PositiveOddNumbersUnderTen = 1 | 3 | 5 | 7 | 9;
 let foo: PositiveOddNumbersUnderTen = 1;
 console.log(foo);
+*/
+
+function foo(str?: string) {
+    console.log(str);
+}
+foo();
+foo('bar');
