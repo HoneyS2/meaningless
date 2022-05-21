@@ -31,8 +31,27 @@ let foo: PositiveOddNumbersUnderTen = 1;
 console.log(foo);
 */
 
+interface Foo {
+    name: string;
+    age: number;
+}
+interface Bar {
+    name: string;
+    height: number;
+}
+type FooBar = Foo & Bar;
+
+let tom: FooBar = {
+    name: "tom",
+    age: 28,
+    height: 100
+};
+console.log(tom);
+
+/*
 function foo(str?: string) {
     console.log(str);
 }
 foo();
 foo('bar');
+*/
