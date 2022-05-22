@@ -1,15 +1,24 @@
-/*
 interface User {
     id: number;
     name: string;
 }
 
+/*
 const foo: User = {
     id: 1,
     name: "foo",
 };
 console.log(foo);
 */
+
+function logUser(user: User) {
+    console.log(`id: ${user.id}, name: ${user.name}`);
+}
+
+let foo = { id: 1, name: 'foo' };
+let bar = { id: 2, name: 'bar', age: 28 };
+logUser(foo);
+logUser(bar);
 
 /*
 let foo: Array<number> = [1, 2];
@@ -31,6 +40,7 @@ let foo: PositiveOddNumbersUnderTen = 1;
 console.log(foo);
 */
 
+/*
 interface Foo {
     name: string;
     age: number;
@@ -47,6 +57,7 @@ let tom: FooBar = {
     height: 100
 };
 console.log(tom);
+*/
 
 /*
 function foo(str?: string) {
