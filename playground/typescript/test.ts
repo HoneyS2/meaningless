@@ -1,7 +1,9 @@
+/*
 interface User {
     id: number;
     name: string;
 }
+*/
 
 /*
 const foo: User = {
@@ -11,6 +13,7 @@ const foo: User = {
 console.log(foo);
 */
 
+/*
 function logUser(user: User) {
     console.log(`id: ${user.id}, name: ${user.name}`);
 }
@@ -19,6 +22,7 @@ let foo = { id: 1, name: 'foo' };
 let bar = { id: 2, name: 'bar', age: 28 };
 logUser(foo);
 logUser(bar);
+*/
 
 /*
 let foo: Array<number> = [1, 2];
@@ -66,3 +70,10 @@ function foo(str?: string) {
 foo();
 foo('bar');
 */
+
+let foo: any = "bar";
+console.log(foo);
+foo = 1;
+console.log(foo);
+foo = false;
+console.log(foo);
