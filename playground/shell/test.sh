@@ -18,6 +18,12 @@ foo=$1
 echo $foo
 END
 
+if [ $# -eq 0 ]; then
+        echo "No arguments"
+else
+        echo "The total number of arguments is ${#}"
+fi
+
 : <<END
 read -p "Input text: " foo
 echo $foo
@@ -62,6 +68,7 @@ do
 done
 END
 
+: <<END
 array=(
     'Hello::world'
 )
@@ -71,3 +78,4 @@ for index in "${array[@]}"; do
     VALUE="${index##*::}"
     echo "$KEY, $VALUE!"
 done
+END
