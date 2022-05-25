@@ -18,11 +18,13 @@ foo=$1
 echo $foo
 END
 
+: <<END
 if [ $# -eq 0 ]; then
         echo "No arguments"
 else
         echo "The total number of arguments is ${#}"
 fi
+END
 
 : <<END
 read -p "Input text: " foo
@@ -79,3 +81,30 @@ for index in "${array[@]}"; do
     echo "$KEY, $VALUE!"
 done
 END
+
+read -p "Input integer A: " foo
+read -p "Input integer B: " bar
+
+if [ $foo -eq $bar ]; then
+    echo "${foo} and ${bar} are EQual"
+fi
+
+if [ $foo -ne $bar ]; then
+    echo "${foo} and ${bar} are Not Equal"
+fi
+
+if [ $foo -gt $bar ]; then
+    echo "${foo} is Greater Than ${bar}"
+fi
+
+if [ $foo -ge $bar ]; then
+    echo "${foo} is Greater than or Equal to ${bar}"
+fi
+
+if [ $foo -lt $bar ]; then
+    echo "${foo} is Less Than ${bar}"
+fi
+
+if [ $foo -le $bar ]; then
+    echo "${foo} is Less than or Equal to ${bar}"
+fi
