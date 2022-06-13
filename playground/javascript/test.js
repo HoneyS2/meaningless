@@ -96,8 +96,10 @@ setInterval(() => clearInterval(timerId), 5000);
 */
 
 /*
-var foo = [];
-Object.getPrototypeOf(foo);
+let foo = {};
+let bar = [];
+console.log(Object.getPrototypeOf(foo));
+console.log(Object.getPrototypeOf(bar));
 */
 
 /*
@@ -419,13 +421,6 @@ let foo = {
 let bar = ['a', 'b', 'c'];
 console.log(Object.values(foo));
 console.log(...bar.values());
-*/
-
-/*
-let foo = {};
-let bar = [];
-console.log(Object.getPrototypeOf(foo));
-console.log(Object.getPrototypeOf(bar));
 */
 
 /*
