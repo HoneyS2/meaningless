@@ -617,8 +617,10 @@ let bar = {
 console.log(Object.keys(bar).length);
 */
 
+/*
 function foo(a, b){};
 console.log(foo.length);
+*/
 
 /*
 const regex = new RegExp('Hello*', 'i');
@@ -664,3 +666,10 @@ let foo = ";,/?:@&=+$#";
 console.log(encodeURI(foo));
 console.log(encodeURIComponent(foo));
 */
+
+let foo = 1;
+if (typeof foo != "undefined") {
+    console.log('foo is exist.');
+} else {
+    console.log('foo is NOT exist.');
+}
